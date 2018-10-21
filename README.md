@@ -1,6 +1,6 @@
 # cat_dog_encyclopedia
 
-A new Flutter application.
+Flutter application about Cat and Dog Species Encyclopedia. 
 
 ## Getting Started
 
