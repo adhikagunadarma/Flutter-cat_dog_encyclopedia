@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "192425274037",
+    "firebase_url": "https://cat-dog-encylopedia.firebaseio.com",
+    "project_id": "cat-dog-encylopedia",
+    "storage_bucket": "cat-dog-encylopedia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192425274037:android:58eaf3f056a4e615",
+        "android_client_info": {
+          "package_name": "com.example.catdogencyclopedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192425274037-tvnm2knv14tqjnv6qu9qsopv8n8pg3k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxL4TZS_mBZJZ3oUyPpd2Xfhhsewvfu9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
