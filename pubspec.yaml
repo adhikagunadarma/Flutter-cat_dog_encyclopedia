@@ -73,6 +73,7 @@ flutter:
     - assets/images/dogs/Beauceron.jpg
     - assets/images/dogs/Bedlington_Terrier.jpg
     - assets/images/dogs/Belgian_Laekenois.jpg
+    - assets/images/dogs/Belgian_Sheepdog.jpg
     - assets/images/dogs/Belgian_Malinois.jpg
     - assets/images/dogs/Belgian_Tervuren.jpg
     - assets/images/dogs/Bergamasco_Sheepdog.jpg
@@ -89,6 +90,7 @@ flutter:
     - assets/images/dogs/Border_Collie.jpg
     - assets/images/dogs/Border_Terrier.jpg
     - assets/images/dogs/Borzoi.jpg
+    - assets/images/dogs/Boston_Terrier.jpg
     - assets/images/dogs/Bouvier_des_Flandres.jpg
     - assets/images/dogs/Boxer.jpg
     - assets/images/dogs/Boykin_Spaniel.jpg
@@ -101,11 +103,11 @@ flutter:
     - assets/images/dogs/Bull_Terrier.jpg
     - assets/images/dogs/Bulldog.jpg
     - assets/images/dogs/Bullmastiff.jpg
-    - assets/images/dogs/Cairn-Terrier.jpg
+    - assets/images/dogs/Cairn_Terrier.jpg
     - assets/images/dogs/Canaan_Dog.jpg
     - assets/images/dogs/Cane_Corso.jpg
     - assets/images/dogs/Cardigan_Welsh_Corgi.jpg
-    - assets/images/dogs/Carolina-Dog.jpg
+    - assets/images/dogs/Carolina_Dog.jpg
     - assets/images/dogs/Catahoula_Leopard_Dog.jpg
     - assets/images/dogs/Caucasian_Shepherd_Dog.jpg
     - assets/images/dogs/Cavalier_King_Charles_Spaniel.jpg
@@ -117,6 +119,7 @@ flutter:
     - assets/images/dogs/Chinese_Shar-Pei.jpg
     - assets/images/dogs/Chinook.jpg
     - assets/images/dogs/Chow_Chow.jpg
+    - assets/images/dogs/Cirnecco.jpg
     - assets/images/dogs/Clumber_Spaniel.jpg
     - assets/images/dogs/Cocker_Spaniel.jpg
     - assets/images/dogs/Collie.jpg
