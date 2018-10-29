@@ -54,7 +54,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
           FontAwesomeIcons.dog,
           color: Colors.black,
           size: 20.0,
-        ),
+        ), onPressed: () {},
       ),
       title: Text("${widget.data.name}",
         style: TextStyle(

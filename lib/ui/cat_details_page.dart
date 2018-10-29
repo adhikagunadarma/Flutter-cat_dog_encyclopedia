@@ -58,7 +58,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
           FontAwesomeIcons.cat,
           color: Colors.black,
           size: 20.0,
-        ),
+        ), onPressed: () {},
       ),
       title: Text("${widget.data.name}",
         style: TextStyle(

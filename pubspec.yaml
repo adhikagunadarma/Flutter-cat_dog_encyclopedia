@@ -49,6 +49,161 @@ flutter:
     - assets/images/dogs/Akita.jpg
     - assets/images/dogs/Alaskan_Malamute.jpg
     - assets/images/dogs/American_English_Coonhound.jpg
+    - assets/images/dogs/American_Eskimo_Dog.jpg
+    - assets/images/dogs/American_Foxhound.jpg
+    - assets/images/dogs/American_Hairless_Terrier.jpg
+    - assets/images/dogs/American_Leopard_Hound.jpg
+    - assets/images/dogs/American_Staffordshire_Terrier.jpg
+    - assets/images/dogs/American_Water_Spaniel.jpg
+    - assets/images/dogs/Anatolian_Shepherd_Dog.jpg
+    - assets/images/dogs/Appenzeller_Sennenhund.jpg
+    - assets/images/dogs/Australian_Cattle_Dog.jpg
+    - assets/images/dogs/Australian_Kelpie.jpg
+    - assets/images/dogs/Australian_Shepherd.jpg
+    - assets/images/dogs/Australian_Stumpy_Tail_Cattle_Dog.jpg
+    - assets/images/dogs/Australian_Terrier.jpg
+    - assets/images/dogs/Azawakh.jpg
+    - assets/images/dogs/Barbet.jpg
+    - assets/images/dogs/Basenji.jpg
+    - assets/images/dogs/Basset_Fauve_de_Bretagne.jpg
+    - assets/images/dogs/Basset_Hound.jpg
+    - assets/images/dogs/Bavarian_Mountain_Scent_Hound.jpg
+    - assets/images/dogs/Beagle.jpg
+    - assets/images/dogs/Bearded_Collie.jpg
+    - assets/images/dogs/Beauceron.jpg
+    - assets/images/dogs/Bedlington_Terrier.jpg
+    - assets/images/dogs/Belgian_Laekenois.jpg
+    - assets/images/dogs/Belgian_Malinois.jpg
+    - assets/images/dogs/Belgian_Tervuren.jpg
+    - assets/images/dogs/Bergamasco_Sheepdog.jpg
+    - assets/images/dogs/Berger_Picard.jpg
+    - assets/images/dogs/Bernese_Mountain_Dog.jpg
+    - assets/images/dogs/Bichon_Frise.jpg
+    - assets/images/dogs/Biewer_Terrier.jpg
+    - assets/images/dogs/Black_and_Tan_Coonhound.jpg
+    - assets/images/dogs/Black_Russian_Terrier.jpg
+    - assets/images/dogs/Bloodhound.jpg
+    - assets/images/dogs/Bluetick_Coonhound.jpg
+    - assets/images/dogs/Boerboel.jpg
+    - assets/images/dogs/Bolognese.jpg
+    - assets/images/dogs/Border_Collie.jpg
+    - assets/images/dogs/Border_Terrier.jpg
+    - assets/images/dogs/Borzoi.jpg
+    - assets/images/dogs/Bouvier_des_Flandres.jpg
+    - assets/images/dogs/Boxer.jpg
+    - assets/images/dogs/Boykin_Spaniel.jpg
+    - assets/images/dogs/Bracco_Italiano.jpg
+    - assets/images/dogs/Braque_Francais_Pyrenean.jpg
+    - assets/images/dogs/Briard.jpg
+    - assets/images/dogs/Brittany.jpg
+    - assets/images/dogs/Broholmer.jpg
+    - assets/images/dogs/Brussels_Griffon.jpg
+    - assets/images/dogs/Bull_Terrier.jpg
+    - assets/images/dogs/Bulldog.jpg
+    - assets/images/dogs/Bullmastiff.jpg
+    - assets/images/dogs/Cairn-Terrier.jpg
+    - assets/images/dogs/Canaan_Dog.jpg
+    - assets/images/dogs/Cane_Corso.jpg
+    - assets/images/dogs/Cardigan_Welsh_Corgi.jpg
+    - assets/images/dogs/Carolina-Dog.jpg
+    - assets/images/dogs/Catahoula_Leopard_Dog.jpg
+    - assets/images/dogs/Caucasian_Shepherd_Dog.jpg
+    - assets/images/dogs/Cavalier_King_Charles_Spaniel.jpg
+    - assets/images/dogs/Central_Asian_Shepherd_Dog.jpg
+    - assets/images/dogs/Cesky_Terrier.jpg
+    - assets/images/dogs/Chesapeake_Bay_Retriever.jpg
+    - assets/images/dogs/Chihuahua.jpg
+    - assets/images/dogs/Chinese_Crested.jpg
+    - assets/images/dogs/Chinese_Shar-Pei.jpg
+    - assets/images/dogs/Chinook.jpg
+    - assets/images/dogs/Chow_Chow.jpg
+    - assets/images/dogs/Clumber_Spaniel.jpg
+    - assets/images/dogs/Cocker_Spaniel.jpg
+    - assets/images/dogs/Collie.jpg
+    - assets/images/dogs/Coton_de_Tulear.jpg
+    - assets/images/dogs/Croatian_Sheepdog.jpg
+    - assets/images/dogs/Curly-Coated_Retriever.jpg
+    - assets/images/dogs/Czechoslovakian_Vlcak.jpg
+    - assets/images/dogs/Dachshund.jpg
+    - assets/images/dogs/Dalmatian.jpg
+    - assets/images/dogs/Dandie_Dinmont_Terrier.jpg
+    - assets/images/dogs/Danish-Swedish_Farmdog.jpg
+    - assets/images/dogs/Deutscher_Wachtelhund.jpg
+    - assets/images/dogs/Doberman_Pinscher.jpg
+    - assets/images/dogs/Dogo_Argentino.jpg
+    - assets/images/dogs/Dogue_de_Bordeaux.jpg
+    - assets/images/dogs/Drentsche_Patrijshond.jpg
+    - assets/images/dogs/Drever.jpg
+    - assets/images/dogs/Dutch_Shepherd.jpg
+    - assets/images/dogs/English_Cocker_Spaniel.jpg
+    - assets/images/dogs/English_Foxhound.jpg
+    - assets/images/dogs/English_Setter.jpg
+    - assets/images/dogs/English_Springer_Spaniel.jpg
+    - assets/images/dogs/English_Toy_Spaniel.jpg
+    - assets/images/dogs/Entlebucher_Mountain_Dog.jpg
+    - assets/images/dogs/Estrela_Mountain_Dog.jpg
+    - assets/images/dogs/Eurasier.jpg
+    - assets/images/dogs/Field_Spaniel.jpg
+    - assets/images/dogs/Finnish_Lapphund.jpg
+    - assets/images/dogs/Finnish_Spitz.jpg
+    - assets/images/dogs/Flat-Coated_Retriever.jpg
+    - assets/images/dogs/French_Bulldog.jpg
+    - assets/images/dogs/French_Spaniel.jpg
+    - assets/images/dogs/German_Longhaired_Pointer.jpg
+    - assets/images/dogs/German_Pinscher.jpg
+    - assets/images/dogs/German_Shepherd_Dog.jpg
+    - assets/images/dogs/German_Shorthaired_Pointer.jpg
+    - assets/images/dogs/German_Spitz.jpg
+    - assets/images/dogs/German_Wirehaired_Pointer.jpg
+    - assets/images/dogs/Giant_Schnauzer.jpg
+    - assets/images/dogs/Glen_of_Imaal_Terrier.jpg
+    - assets/images/dogs/Golden_Retriever.jpg
+    - assets/images/dogs/Gordon_Setter.jpg
+    - assets/images/dogs/Grand_Basset_Griffon_Vendeen.jpg
+    - assets/images/dogs/Great_Dane.jpg
+    - assets/images/dogs/Great_Pyrenees.jpg
+    - assets/images/dogs/Greater_Swiss_Mountain_Dog.jpg
+    - assets/images/dogs/Greyhound.jpg
+    - assets/images/dogs/Hamiltonstovare.jpg
+    - assets/images/dogs/Hanoverian_Scenthound.jpg
+    - assets/images/dogs/Harrier.jpg
+    - assets/images/dogs/Havanese.jpg
+    - assets/images/dogs/Hokkaido.jpg
+    - assets/images/dogs/Hovawart.jpg
+    - assets/images/dogs/Ibizan_Hound.jpg
+    - assets/images/dogs/Icelandic_Sheepdog.jpg
+    - assets/images/dogs/Irish_Red_And_White_Setter.jpg
+    - assets/images/dogs/Irish_Setter.jpg
+    - assets/images/dogs/Irish_Terrier.jpg
+    - assets/images/dogs/Irish_Water_Spaniel.jpg
+    - assets/images/dogs/Irish_Wolfhound.jpg
+    - assets/images/dogs/Italian_Greyhound.jpg
+    - assets/images/dogs/Jagdterrier.jpg
+    - assets/images/dogs/Japanese_Chin.jpg
+    - assets/images/dogs/Jindo.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   # cats

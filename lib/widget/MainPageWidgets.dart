@@ -210,7 +210,7 @@ Widget animalTypeWidget(BuildContext context, String name, Animation animation){
                         ? MediaQuery.of(context).size.height / 45
                         : MediaQuery.of(context).size.width / 45,
                     fontFamily: _fontFamilyType),
-              ),
+              ), onPressed: () {},
        ),
       ),
      ),
