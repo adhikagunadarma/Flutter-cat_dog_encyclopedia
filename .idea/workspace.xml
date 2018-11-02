@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7719188-629d-4ff7-b280-6ade66462b51" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_dog_encyclopedia" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="258" column="51" selection-start-line="258" selection-start-column="51" selection-end-line="258" selection-end-column="51" />
+            <state relative-caret-position="353">
+              <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
             </state>
           </provider>
         </entry>
@@ -123,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,8 +164,9 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -633,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="258" column="51" selection-start-line="258" selection-start-column="51" selection-end-line="258" selection-end-column="51" />
+        <state relative-caret-position="353">
+          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
         </state>
       </provider>
     </entry>
