@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       home: new MyHomePage(title: 'Cat - Dog Encyclopedia'),
     );
   }
+
 }
 
 class MyHomePage extends StatefulWidget {
