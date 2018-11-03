@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7719188-629d-4ff7-b280-6ade66462b51" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat_dog_encyclopedia" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
+            <state relative-caret-position="5045">
+              <caret line="316" selection-start-line="316" selection-end-line="316" />
             </state>
           </provider>
         </entry>
@@ -141,13 +139,6 @@
               <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="dogs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
@@ -296,13 +287,13 @@
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.3296" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3258427" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32662538" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32662538" />
       <window_info anchor="right" id="Flutter Outline" order="5" weight="0.32980332" />
       <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.4969743" weight="0.3296" />
       <window_info id="Captures" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="6" />
@@ -634,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
+        <state relative-caret-position="5045">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
         </state>
       </provider>
     </entry>
