@@ -1,5 +1,5 @@
 name: cat_dog_encyclopedia
-description: A new Flutter application.
+description: Cat and Dog Encyclopedia Application.
 
 
 dependencies:
@@ -14,11 +14,19 @@ dependencies:
   cupertino_icons: ^0.1.2
   dots_indicator: ^0.0.3
 
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   font_awesome_flutter: ^8.0.1
+  flutter_launcher_icons: ^0.6.1
+
+flutter_icons:
+  image_path: "assets/images/icon_logo.jpg"
+  android: true
+  ios: true
 
 
 
@@ -40,6 +48,7 @@ flutter:
     - assets/images/catlogo.jpg
     - assets/images/doglogo.jpg
     - assets/images/background.jpg
+    - assets/images/icon_logo.jpg
 
 
   # dogs
@@ -322,6 +331,52 @@ flutter:
     - assets/images/cats/American_Curl.jpg
     - assets/images/cats/American_Shorthair.jpg
     - assets/images/cats/American_Wirehair.jpg
+    - assets/images/cats/Balinese.jpg
+    - assets/images/cats/Bengal.jpg
+    - assets/images/cats/Birman.jpg
+    - assets/images/cats/Bombay.jpg
+    - assets/images/cats/British_Shorthair.jpg
+    - assets/images/cats/Burmese.jpg
+    - assets/images/cats/Burmilla.jpg
+    - assets/images/cats/Chartreux.jpg
+    - assets/images/cats/Chinese_Li_Hua.jpg
+    - assets/images/cats/Colorpoint_Shorthair.jpg
+    - assets/images/cats/Cornish_Rex.jpg
+    - assets/images/cats/Cymric.jpg
+    - assets/images/cats/Devon_Rex.jpg
+    - assets/images/cats/Egyptian_Mau.jpg
+    - assets/images/cats/European_Burmese.jpg
+    - assets/images/cats/Exotic.jpg
+    - assets/images/cats/Havana_Brown.jpg
+    - assets/images/cats/Himalayan.jpg
+    - assets/images/cats/Japanese_Bobtail.jpg
+    - assets/images/cats/Javanese.jpg
+    - assets/images/cats/Korat.jpg
+    - assets/images/cats/LaPerm.jpg
+    - assets/images/cats/Maine_Coon.jpg
+    - assets/images/cats/Manx.jpg
+    - assets/images/cats/Nebelung.jpg
+    - assets/images/cats/Norwegian_Forest.jpg
+    - assets/images/cats/Ocicat.jpg
+    - assets/images/cats/Oriental.jpg
+    - assets/images/cats/Persian.jpg
+    - assets/images/cats/Pixie-Bob.jpg
+    - assets/images/cats/Ragamuffin.jpg
+    - assets/images/cats/Ragdoll_Cat.jpg
+    - assets/images/cats/Russian_Blue.jpg
+    - assets/images/cats/Savannah.jpg
+    - assets/images/cats/Scottish_Fold.jpg
+    - assets/images/cats/Selkirk_Rex.jpg
+    - assets/images/cats/Siamese_Cat.jpg
+    - assets/images/cats/Siberian.jpg
+    - assets/images/cats/Singapura.jpg
+    - assets/images/cats/Snowshoe.jpg
+    - assets/images/cats/Somali.jpg
+    - assets/images/cats/Sphynx.jpg
+    - assets/images/cats/Tonkinese.jpg
+    - assets/images/cats/Turkish_Angora.jpg
+    - assets/images/cats/Turkish_Van.jpg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
