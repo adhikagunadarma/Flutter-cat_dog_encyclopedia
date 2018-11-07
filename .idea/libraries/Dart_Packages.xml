@@ -145,7 +145,7 @@
         <entry key="font_awesome_flutter">
           <value>
             <list>
-              <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.1.0/lib" />
+              <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.2.0/lib" />
             </list>
           </value>
         </entry>
@@ -380,6 +380,13 @@
             </list>
           </value>
         </entry>
+        <entry key="splashscreen">
+          <value>
+            <list>
+              <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/splashscreen-1.1.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="stack_trace">
           <value>
             <list>
@@ -492,7 +499,7 @@
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-0.4.6/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-1.0.4/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.6.1/lib" />
-      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.1.0/lib" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.2.0/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/front_end-0.1.4/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/glob-1.1.7/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.13.3+3/lib" />
@@ -525,6 +532,7 @@
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/source_map_stack_trace-1.1.5/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/source_maps-0.10.7/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.4.1/lib" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/splashscreen-1.1.0/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.9.3/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-1.6.8/lib" />
       <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.0.4/lib" />
