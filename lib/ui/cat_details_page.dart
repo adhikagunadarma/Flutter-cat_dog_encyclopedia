@@ -37,11 +37,12 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
 
 
     List<Widget> _pages = <Widget>[
-      detailsBottomWidget("Personality", widget.data.personality, 0xFFfebee5),
-      detailsBottomWidget("Care", widget.data.care,0xFFe7a6fd),
-      detailsBottomWidget("Environment", widget.data.environment,0xFFbcc4f8),
-      detailsBottomWidget("Grooming", widget.data.grooming, 0xFFecf8bc),
-      detailsBottomWidget("Health", widget.data.health, 0xFFace3c8),
+      detailsBottomContainerMain(widget.data.lifespan, widget.data.size, widget.data.about),
+      detailsBottomContainerExtra("Personality", widget.data.personality, 0xFFfebee5),
+      detailsBottomContainerExtra("Care", widget.data.care,0xFFe7a6fd),
+      detailsBottomContainerExtra("Environment", widget.data.environment,0xFFbcc4f8),
+      detailsBottomContainerExtra("Grooming", widget.data.grooming, 0xFFecf8bc),
+      detailsBottomContainerExtra("Health", widget.data.health, 0xFFace3c8),
     ];
 
     return Scaffold(
@@ -58,7 +59,9 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
           FontAwesomeIcons.cat,
           color: Colors.black,
           size: 20.0,
-        ), onPressed: () {},
+        ), onPressed: () {
+          Navigator.pop(context);
+        },
       ),
       title: Text("${widget.data.name}",
         style: TextStyle(
@@ -74,83 +77,68 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
   Widget _buildBody(List<Widget> pages) {
     return SingleChildScrollView(
       child: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height >= 775.0
-            ? MediaQuery.of(context).size.height
-            : 775.0,
         decoration: new BoxDecoration(
           image: new DecorationImage(
               image: new AssetImage(_bgImage),
               fit: BoxFit.cover
           ),
         ),
-        child: new Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: detailsTopWidget("Image", widget.data.imageRef, context),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              topContainer(),
+              bottomContainer(pages),
+            ]),
+      ),
+    );
+  }
+
+  Widget topContainer() {
+    return Container(
+      height: 0.440 * MediaQuery.of(context).size.height,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: detailsTopContainer("Image", widget.data.imageRef, context),
+      ),
+    );
+  }
+
+  Widget bottomContainer(pages) {
+    return Container(
+      height: 0.443 * MediaQuery.of(context).size.height,
+      child: Stack(
+        children: <Widget>[
+          new PageView.builder(
+              physics: new AlwaysScrollableScrollPhysics(),
+              controller: _controller,
+              itemCount: 6,
+              itemBuilder: (BuildContext context, int index) {
+                return pages[index % pages.length];
+              }),
+          new Positioned(
+            bottom: 0.0,
+            left: 0.0,
+            right: 0.0,
+            child: new Container(
+              color: Colors.grey[800].withOpacity(0.5),
+              padding: const EdgeInsets.all(20.0),
+              child: new Center(
+                child: new DotsIndicator(
+                  controller: _controller,
+                  itemCount: 6,
+                  onPageSelected: (int page) {
+                    _controller.animateToPage(
+                      page,
+                      duration: _kDuration,
+                      curve: _kCurve,
+                    );
+                  },
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(_borderRadius),
-                    ),
-                    color: Color(0xFFe0dce0),
-                    child: Column(
-                      children: <Widget>[
-                        detailsMiddleWidget("Lifespan", widget.data.lifespan),
-                        detailsMiddleWidget("Size", widget.data.size),
-                        detailsMiddleWidget("About", widget.data.about),
-                      ],
-                    ),
-                  ),
-                ),
-                Flexible(
-                  fit: FlexFit.loose,
-                  child: SizedBox(
-                    height: 300.0,
-                    width: MediaQuery.of(context).size.width,
-                    child: Stack(
-                      children: <Widget>[
-                        new PageView.builder(
-                            physics: new AlwaysScrollableScrollPhysics(),
-                            controller: _controller,
-                            itemCount: 5,
-                            itemBuilder: (BuildContext context, int index) {
-                              return pages[index % pages.length];
-                            }),
-                        new Positioned(
-                          bottom: 0.0,
-                          left: 0.0,
-                          right: 0.0,
-                          child: new Container(
-                            color: Colors.grey[800].withOpacity(0.5),
-                            padding: const EdgeInsets.all(20.0),
-                            child: new Center(
-                              child: new DotsIndicator(
-                                controller: _controller,
-                                itemCount: 5,
-                                onPageSelected: (int page) {
-                                  _controller.animateToPage(
-                                    page,
-                                    duration: _kDuration,
-                                    curve: _kCurve,
-                                  );
-                                },
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ]),
-        ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

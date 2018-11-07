@@ -21,23 +21,21 @@ Widget titleWidget(Animation animation, BuildContext context){
         borderRadius: BorderRadius.all(Radius.circular(_borderRadiusTitle)),
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Theme.Colors.loginGradientStart,
+            color: Theme.Colors.loginGradientStart.withOpacity(1.0),
             offset: Offset(1.0, 6.0),
             blurRadius: 20.0,
           ),
           BoxShadow(
-            color: Theme.Colors.loginGradientEnd,
+            color: Theme.Colors.loginGradientStart.withOpacity(1.0),
             offset: Offset(1.0, 6.0),
             blurRadius: 20.0,
           ),
         ],
-        gradient: new LinearGradient(
+        gradient: new RadialGradient(
             colors: [
-              Theme.Colors.loginGradientEnd,
-              Theme.Colors.loginGradientStart
+              Theme.Colors.loginGradientEnd.withOpacity(1.0).withOpacity(1.0),
+              Theme.Colors.loginGradientEnd.withOpacity(1.0).withOpacity(1.0)
             ],
-            begin: const FractionalOffset(0.2, 0.2),
-            end: const FractionalOffset(1.0, 1.0),
             stops: [0.0, 1.0],
             tileMode: TileMode.clamp),
       ),
