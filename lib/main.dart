@@ -32,7 +32,7 @@ class _CatDogEncyclopediaState extends State<CatDogEncyclopedia> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-      seconds: 50,
+      seconds: 5,
       navigateAfterSeconds: new MyHomePage(title: 'Cat - Dog Encyclopedia'),
       title: new Text('Cat Dog Encyclopedia',
         style: new TextStyle(

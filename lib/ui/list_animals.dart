@@ -21,10 +21,10 @@ class ListAnimalsPage extends StatefulWidget {
 class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   final double _borderRadius = 30.0;
-  final double _iconBorderRadius = 75.0;
+  final double _iconBorderRadius = 30.0;
   final double _iconSize = 20.0;
   final double _searchTextSize = 20.0;
-  final double _animalTextSize = 15.0;
+  final double _animalTextSize = 20.0;
   final double _animalIconSize = 75.0;
 
   final String _searchTextFamily = "MaliBold";
@@ -92,11 +92,14 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
               borderRadius: BorderRadius.circular(_borderRadius),
             ),
             child: Row(
+//              mainAxisSize: MainAxisSize.max,
+//              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
+
                     child: Image(
                       image: new AssetImage('${filteredAnimals[i].imageRef}'),
                       width: _animalIconSize,
@@ -105,17 +108,18 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    '${filteredAnimals[i].name}',
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: _animalTextSize,
-                      fontFamily: _listTextFamily
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      '${filteredAnimals[i].name}',
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: _animalTextSize,
+                        fontFamily: _listTextFamily
+                      ),
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ),
               ],
@@ -137,12 +141,13 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     );
   }
 
-  void getData() {
+  void getData() async{
     final CollectionReference animalCollections =
     Firestore.instance.collection(widget.type);
     Stream<QuerySnapshot> snapshots = animalCollections.snapshots();
     animalSub?.cancel();
     animalSub = snapshots.listen((QuerySnapshot snapshot) {
+
       if (widget.type == "cats") {
         final List<Cat> cats = snapshot.documents
             .map((documentSnapshot) => Cat.fromMap(documentSnapshot.data))
