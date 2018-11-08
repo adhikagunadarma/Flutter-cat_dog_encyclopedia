@@ -6,6 +6,6 @@
 
 build/
 
-.idea/
+.idea/workspace.xml
 
 .flutter-plugins
