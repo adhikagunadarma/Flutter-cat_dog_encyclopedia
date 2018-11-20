@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
+import 'package:cached_network_image/cached_network_image.dart';
 
-final String _valueFontFamily = "MaliMedium";
-final String _titleFontFamily = "MaliSemiBold";
+
 final double _titleFontSize = 13.0;
 final double _valueFontSize = 12.0;
+
+final double _borderRadius = 30.0;
 
 final double _widthThreshold = 500.0;
 final double _heightThreshold = 250.0;
 
-final double _borderRadius = 30.0;
 
 Widget detailsTopContainer(
     String imageTitle, String imageRef, BuildContext context) {
@@ -22,19 +24,22 @@ Widget detailsTopContainer(
             ? _heightThreshold
             : MediaQuery.of(context).size.height,
 
-          child: ClipRRect(
-            borderRadius: new BorderRadius.circular(_borderRadius),
-            child: new Image.asset(
-              imageRef,
-              width: MediaQuery.of(context).size.width <= _widthThreshold
-                  ? _widthThreshold
-                  : MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height <= _heightThreshold
-                  ? _heightThreshold
-                  : MediaQuery.of(context).size.width,
-              fit: BoxFit.fill,
-            ),
-          )),
+        child: ClipRRect(
+          borderRadius: new BorderRadius.circular(_borderRadius),
+          child: Image(
+//            imageUrl : imageRef,
+//            placeholder: CircularProgressIndicator(),
+            image: new AssetImage(imageRef),
+            width: MediaQuery.of(context).size.width <= _widthThreshold
+                ? _widthThreshold
+                : MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height <= _heightThreshold
+                ? _heightThreshold
+                : MediaQuery.of(context).size.width,
+            fit: BoxFit.cover,
+          ),
+
+        )),
   );
 }
 
@@ -47,7 +52,7 @@ Widget detailsBottomContainerMainData(String title, String data) {
         style: TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: _valueFontSize,
-            fontFamily: _valueFontFamily),
+            fontFamily: Theme.Font.medium),
         textAlign: TextAlign.justify,
       ),
     ),
@@ -57,7 +62,7 @@ Widget detailsBottomContainerMainData(String title, String data) {
         title,
         style: TextStyle(
           fontSize: _titleFontSize,
-          fontFamily: _titleFontFamily,
+          fontFamily: Theme.Font.semiBold,
         ),
       ),
     ),
@@ -71,14 +76,17 @@ Widget detailsBottomContainerMain(String dataLifespan, String dataSize, String d
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(_borderRadius),
       ),
-      color: Color(0xFFe0dce0),
-      child: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            detailsBottomContainerMainData("Lifespan", dataLifespan),
-            detailsBottomContainerMainData("Size", dataSize),
-            detailsBottomContainerMainData("About", dataAbout),
-          ],
+      color: Theme.Colors.secondaryColor,
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              detailsBottomContainerMainData("Lifespan", dataLifespan),
+              detailsBottomContainerMainData("Size", dataSize),
+              detailsBottomContainerMainData("About", dataAbout),
+            ],
+          ),
         ),
       ),
     ),
@@ -89,36 +97,39 @@ Widget detailsBottomContainerExtra(String title, String data, int color) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: Card(
-      color: Color(color),
+      color: Theme.Colors.secondaryColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(_borderRadius),
       ),
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                title,
-                style: TextStyle(
-                  fontSize: _titleFontSize,
-                  fontFamily: _titleFontFamily,
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: _titleFontSize,
+                    fontFamily: Theme.Font.semiBold,
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                data,
-                style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: _valueFontSize,
-                    fontFamily: _valueFontFamily),
-                textAlign: TextAlign.justify,
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  data,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: _valueFontSize,
+                      fontFamily: Theme.Font.medium),
+                  textAlign: TextAlign.justify,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     ),

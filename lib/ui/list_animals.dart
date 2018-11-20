@@ -6,6 +6,9 @@ import 'package:cat_dog_encyclopedia/ui/cat_details_page.dart';
 import 'package:cat_dog_encyclopedia/ui/dog_details_page.dart';
 import 'package:cat_dog_encyclopedia/model/Cat.dart';
 import 'package:cat_dog_encyclopedia/model/Dog.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
+
 
 class ListAnimalsPage extends StatefulWidget {
   @override
@@ -25,17 +28,16 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   final double _iconSize = 20.0;
   final double _searchTextSize = 20.0;
   final double _animalTextSize = 20.0;
+//  final double _animalIconSize = 36.0;
   final double _animalIconSize = 75.0;
-
-  final String _searchTextFamily = "MaliBold";
-  final String _listTextFamily = "MaliSemiBold";
-
-  final String _bgImage = 'assets/images/background.jpg';
 
   final TextEditingController _searchController = new TextEditingController();
   final FocusNode _searchFocusNode = FocusNode();
 
+  static bool _load = true;
   String _searchText = "";
+  List<Cat> cats = new List();
+  List<Dog> dogs = new List();
   List animals = new List();
   List filteredAnimals = new List();
   StreamSubscription<QuerySnapshot> animalSub;
@@ -75,10 +77,35 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    Widget loadingIndicator =_load? new Container(
+      color: Colors.white,
+      width: 100.0,
+      height: 100.0,
+      child: new Padding(padding: const EdgeInsets.all(5.0),child: new Center(child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          new CircularProgressIndicator(
+            valueColor: new AlwaysStoppedAnimation<Color>(Theme.Colors.secondaryColor) ,
+          ),
+          new Text("Loading data...",
+          textAlign: TextAlign.center,)
+        ],
+      ))),
+    ):new Container();
     return Scaffold(
       appBar: _buildBar(context),
-      body: _buildList(),
+      body: _buildList(loadingIndicator),
+      bottomNavigationBar: BottomAppBar(
+        child: new Container(
+          height: 50.0,
+        ),
+      ),
       resizeToAvoidBottomPadding: false,
 
     );
@@ -97,14 +124,27 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Theme.Colors.secondaryColor,
+                      borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
+                        child: Image(
+//                      placeholder: CircularProgressIndicator(
+//                        valueColor: new AlwaysStoppedAnimation<Color>(Theme.Colors.secondaryColor) ,
+//                      ),
+//                      imageUrl: filteredAnimals[i].imageRef,
+                          image: new AssetImage('${filteredAnimals[i].imagePath}'),
+                          fit: BoxFit.fill,
+                          width: _animalIconSize,
+                          height: _animalIconSize,
 
-                    child: Image(
-                      image: new AssetImage('${filteredAnimals[i].imageRef}'),
-                      width: _animalIconSize,
-                      height: _animalIconSize,
-                      fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -117,7 +157,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: _animalTextSize,
-                        fontFamily: _listTextFamily
+                        fontFamily: Theme.Font.medium
                       ),
                     ),
                   ),
@@ -141,36 +181,9 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     );
   }
 
-  void getData() async{
-    final CollectionReference animalCollections =
-    Firestore.instance.collection(widget.type);
-    Stream<QuerySnapshot> snapshots = animalCollections.snapshots();
-    animalSub?.cancel();
-    animalSub = snapshots.listen((QuerySnapshot snapshot) {
-
-      if (widget.type == "cats") {
-        final List<Cat> cats = snapshot.documents
-            .map((documentSnapshot) => Cat.fromMap(documentSnapshot.data))
-            .toList();
-        setState(() {
-          animals = cats;
-          filteredAnimals = animals;
-        });
-      } else {
-        final List<Dog> dogs = snapshot.documents
-            .map((documentSnapshot) => Dog.fromMap(documentSnapshot.data))
-            .toList();
-        setState(() {
-          animals = dogs;
-          filteredAnimals = animals;
-        });
-      }
-    });
-  }
-
   Widget _buildBar(BuildContext context) {
     return new AppBar(
-      backgroundColor: Color(0xFFfbab66),
+      backgroundColor: Theme.Colors.secondaryColor,
       title: _appBarTitle,
       leading: new IconButton(
         icon: _searchIcon,
@@ -180,7 +193,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   }
 
 
-  Widget _buildList() {
+  Widget _buildList(Widget loadingIndicator) {
     if (!(_searchText.isEmpty)) {
       List tempList = new List();
       for (int i = 0; i < filteredAnimals.length; i++) {
@@ -190,26 +203,64 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
       }
       filteredAnimals = tempList;
     }
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height >= 775.0
-          ? MediaQuery.of(context).size.height
-          : 775.0,
-      decoration: new BoxDecoration(
-        image: new DecorationImage(
-            image: new AssetImage(_bgImage),
-            fit: BoxFit.cover
+    return Stack(
+      children: <Widget>[
+        Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height >= 775.0
+              ? MediaQuery.of(context).size.height
+              : 775.0,
+          decoration: new BoxDecoration(
+//        image: new DecorationImage(
+//            image: new AssetImage(Theme.Image.bgImage),
+//            fit: BoxFit.cover
+//        ),
+              color: Colors.white
+          ),
+          child: ListView.builder(
+            itemCount: animals == null ? 0 : filteredAnimals.length,
+            padding: const EdgeInsets.all(4.0),
+            itemBuilder: (BuildContext context, int index) {
+              return getRow(index);
+            },
+          ),
         ),
-      ),
-      child: ListView.builder(
-        itemCount: animals == null ? 0 : filteredAnimals.length,
-        padding: const EdgeInsets.all(4.0),
-        itemBuilder: (BuildContext context, int index) {
-          return getRow(index);
-        },
-      ),
+        new Align(child: loadingIndicator,alignment: FractionalOffset.center,),
+      ],
     );
   }
+
+  void getData() async{
+    final CollectionReference animalCollections =
+    Firestore.instance.collection(widget.type);
+    Stream<QuerySnapshot> snapshots = animalCollections.snapshots();
+    animalSub?.cancel();
+    animalSub = snapshots.listen((QuerySnapshot snapshot) {
+
+
+      if (widget.type == "cats") {
+        final List<Cat> dataCats = snapshot.documents
+            .map((documentSnapshot) => Cat.fromMap(documentSnapshot.data))
+            .toList();
+
+        setState(() {
+          animals = dataCats;
+          filteredAnimals = animals;
+          _load = false;
+        });
+      } else {
+        final List<Dog> dataDogs = snapshot.documents
+            .map((documentSnapshot) => Dog.fromMap(documentSnapshot.data))
+            .toList();
+        setState(() {
+          animals = dataDogs;
+          filteredAnimals = animals;
+          _load = false;
+        });
+      }
+    });
+  }
+
 
   void _searchPressed() {
     setState(() {
@@ -225,7 +276,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
           focusNode: _searchFocusNode,
           controller: _searchController,
           style: TextStyle(
-              fontFamily: _searchTextFamily,
+              fontFamily: Theme.Font.semiBold,
               fontSize: _searchTextSize,
               color: Colors.black),
           decoration: InputDecoration(
@@ -237,7 +288,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             ),
             hintText: "Search...",
             hintStyle: TextStyle(
-                fontFamily: _searchTextFamily,
+                fontFamily: Theme.Font.semiBold,
                 fontSize: 15.0),
           ),
 

@@ -1,0 +1,92 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+TimeoutException: TimeoutException: Request to Dart VM Service timed out: _flutter.listViews({isolateId: isolates/667508656})
+
+```
+#0      VM.invokeRpcRaw (package:flutter_tools/src/vmservice.dart:842:9)
+<asynchronous suspension>
+#1      VM.invokeRpc (package:flutter_tools/src/vmservice.dart:859:49)
+<asynchronous suspension>
+#2      VM.refreshViews (package:flutter_tools/src/vmservice.dart:957:26)
+<asynchronous suspension>
+#3      FlutterDevice.refreshViews (package:flutter_tools/src/resident_runner.dart:86:24)
+<asynchronous suspension>
+#4      ResidentRunner.refreshViews (package:flutter_tools/src/resident_runner.dart:487:20)
+<asynchronous suspension>
+#5      HotRunner.attach (package:flutter_tools/src/run_hot.dart:190:11)
+<asynchronous suspension>
+#6      HotRunner.run (package:flutter_tools/src/run_hot.dart:270:12)
+<asynchronous suspension>
+#7      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:397:37)
+<asynchronous suspension>
+#8      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:383:18)
+#9      _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#10     _rootRunUnary (dart:async/zone.dart:1132:38)
+#11     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#12     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#13     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#14     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#15     Future._complete (dart:async/future_impl.dart:476:7)
+#16     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#17     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#18     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#19     RunCommand.usageValues (package:flutter_tools/src/commands/run.dart)
+#20     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#21     _rootRunUnary (dart:async/zone.dart:1132:38)
+#22     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#23     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#24     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#25     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#26     Future._complete (dart:async/future_impl.dart:476:7)
+#27     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#28     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#29     _rootRun (dart:async/zone.dart:1124:13)
+#30     _CustomZone.run (dart:async/zone.dart:1021:19)
+#31     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#32     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#33     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#34     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#35     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel beta, v0.10.2, on Microsoft Windows [Version 10.0.17134.345], locale en-US)
+    [32m•[39m Flutter version 0.10.2 at C:\flutter
+    [32m•[39m Framework revision d8cbb80206 (2 weeks ago), 2018-10-26 01:30:21 -0400
+    [32m•[39m Engine revision 6c2ade9fa2
+    [32m•[39m Dart version 2.1.0-dev.8.0.flutter-bf26f760b1
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK 28.0.3)
+    [32m•[39m Android SDK at C:\Users\sunwell\AppData\Local\Android\sdk
+    [32m•[39m Android NDK location not configured (optional; useful for native profiling support)
+    [32m•[39m Platform android-28, build-tools 28.0.3
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1136-b06)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Android Studio (version 3.2)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin version 29.1.1
+    [32m•[39m Dart plugin version 181.5656
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1136-b06)
+
+[33m[!][39m IntelliJ IDEA Community Edition (version 2018.2)
+    [32m•[39m IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.5
+    [31m✗[39m Flutter plugin not installed; this adds Flutter specific functionality.
+    [31m✗[39m Dart plugin not installed; this adds Dart specific functionality.
+    [32m•[39m For information about installing plugins, see
+      https://flutter.io/intellij-setup/#installing-the-plugins
+
+[32m[✓][39m Connected device (1 available)
+    [32m•[39m Android SDK built for x86 • emulator-5554 • android-x86 • Android 8.1.0 (API 27) (emulator)
+
+[33m![39m Doctor found issues in 1 category.
+```

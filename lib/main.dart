@@ -1,3 +1,4 @@
+
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:cat_dog_encyclopedia/ui/home_page.dart';
@@ -29,11 +30,22 @@ class CatDogEncyclopedia extends StatefulWidget{
 
 
 class _CatDogEncyclopediaState extends State<CatDogEncyclopedia> {
+
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
       seconds: 5,
       navigateAfterSeconds: new MyHomePage(title: 'Cat - Dog Encyclopedia'),
+
       title: new Text('Cat Dog Encyclopedia',
         style: new TextStyle(
             fontWeight: FontWeight.bold,
@@ -43,8 +55,11 @@ class _CatDogEncyclopediaState extends State<CatDogEncyclopedia> {
       backgroundColor: Theme.Colors.secondaryColor,
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
-      onClick: ()=> {},
+      onClick: () =>{
+      },
       loaderColor: Colors.white,
     );
   }
+
+
 }

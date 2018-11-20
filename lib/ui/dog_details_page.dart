@@ -3,6 +3,7 @@ import 'package:cat_dog_encyclopedia/model/Dog.dart';
 import 'package:cat_dog_encyclopedia/widget/DetailsPageWidgets.dart';
 import 'package:cat_dog_encyclopedia/extra/DotsIndicator.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
 
 class DogDetailsPage extends StatefulWidget {
   final Dog data;
@@ -22,13 +23,15 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
 
   static const _kCurve = Curves.ease;
 
-  final double _borderRadius = 30.0;
+  @override
+  void initState() {
+    super.initState();
+  }
 
-  final String _nameFontFamily = "MaliMedium";
-
-  final String _bgImage = 'assets/images/background.jpg';
-
-
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +47,11 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
     return Scaffold(
       appBar: _buildAppBar(),
       body: _buildBody(_pages),
+      bottomNavigationBar: BottomAppBar(
+        child: new Container(
+          height: 50.0,
+        ),
+      ),
       resizeToAvoidBottomPadding: false,
     );
   }
@@ -61,12 +69,12 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
       ),
       title: Text("${widget.data.name}",
         style: TextStyle(
-          fontFamily: _nameFontFamily,
+          fontFamily: Theme.Font.medium,
           color: Colors.black,
         ),
       ),
 
-      backgroundColor: Color(0xFFfbab66),
+      backgroundColor: Theme.Colors.secondaryColor,
     );
   }
 
@@ -74,10 +82,11 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
     return SingleChildScrollView(
       child: Container(
         decoration: new BoxDecoration(
-          image: new DecorationImage(
-              image: new AssetImage(_bgImage),
-              fit: BoxFit.cover
-          ),
+//        image: new DecorationImage(
+//            image: new AssetImage(Theme.Image.bgImage),
+//            fit: BoxFit.cover
+//        ),
+            color: Colors.white
         ),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -95,7 +104,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
       height: 0.440 * MediaQuery.of(context).size.height,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: detailsTopContainer("Image", widget.data.imageRef, context),
+        child: detailsTopContainer("Image", widget.data.imagePath, context),
       ),
     );
   }
