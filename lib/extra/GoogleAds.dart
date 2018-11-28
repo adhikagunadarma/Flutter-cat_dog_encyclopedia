@@ -33,12 +33,12 @@ class GoogleAds{
 //      adUnitId: InterstitialAd.testAdUnitId,
         targetingInfo: targetingInfo,
         listener: (MobileAdEvent event) {
-//        if (event == MobileAdEvent.failedToLoad) {
+        if (event == MobileAdEvent.failedToLoad) {
 //          interstitialAd..load();
-//        } else if (event == MobileAdEvent.closed) {
+        } else if (event == MobileAdEvent.closed) {
 //          interstitialAd = buildInterstitial()..load();
-//        }
-//          print(event);
+        }
+          print(event);
         });
   }
 }

@@ -57,9 +57,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
 
-//    bannerAd?.show(
-////      anchorType: AnchorType.top
-//    );
+    bannerAd?.show(
+//      anchorType: AnchorType.top
+    );
     return new WillPopScope(
       onWillPop: _onWillPop,
       child: new Scaffold(
@@ -67,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         resizeToAvoidBottomPadding: false,
         bottomNavigationBar: BottomAppBar(
           child: new Container(
+            color: Theme.Colors.secondaryColor,
             height: 50.0,
           ),
         ),
@@ -85,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
 //            image: new AssetImage(Theme.Image.bgImage),
 //            fit: BoxFit.cover
 //        ),
-          color: Colors.white
+          color: Theme.Colors.secondaryColor
       ),
       child: new Center(
         child: new Column(
@@ -318,7 +319,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           new FlatButton(
 
             onPressed: () {
-//              interstitialAd?.show();
+              interstitialAd?.show();
               Navigator.of(context).pop(true);
             } ,
             child: new Text('Yes'),

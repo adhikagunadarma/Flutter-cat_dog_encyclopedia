@@ -54,6 +54,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
       body: _buildBody(_pages),
       bottomNavigationBar: BottomAppBar(
         child: new Container(
+          color: Theme.Colors.secondaryColor,
           height: 50.0,
         ),
       ),
@@ -79,7 +80,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
         ),
       ),
 
-      backgroundColor: Theme.Colors.secondaryColor,
+      backgroundColor: Theme.Colors.primaryColor,
     );
   }
 
@@ -91,7 +92,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
 ////            image: new AssetImage(Theme.Image.bgImage),
 ////            fit: BoxFit.cover
 ////        ),
-            color: Colors.white
+            color: Theme.Colors.secondaryColor
         ),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -109,7 +110,7 @@ class _CatDetailsPageState extends State<CatDetailsPage> {
       height: 0.440 * MediaQuery.of(context).size.height,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: detailsTopContainer("Image", widget.data.imagePath, context),
+        child: detailsTopContainer("Image", widget.data.imageRef, context),
       ),
     );
   }

@@ -49,6 +49,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
       body: _buildBody(_pages),
       bottomNavigationBar: BottomAppBar(
         child: new Container(
+          color: Theme.Colors.secondaryColor,
           height: 50.0,
         ),
       ),
@@ -74,7 +75,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
         ),
       ),
 
-      backgroundColor: Theme.Colors.secondaryColor,
+      backgroundColor: Theme.Colors.primaryColor,
     );
   }
 
@@ -86,7 +87,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
 //            image: new AssetImage(Theme.Image.bgImage),
 //            fit: BoxFit.cover
 //        ),
-            color: Colors.white
+            color: Theme.Colors.secondaryColor
         ),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -104,7 +105,7 @@ class _DogDetailsPageState extends State<DogDetailsPage> {
       height: 0.440 * MediaQuery.of(context).size.height,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: detailsTopContainer("Image", widget.data.imagePath, context),
+        child: detailsTopContainer("Image", widget.data.imageRef, context),
       ),
     );
   }

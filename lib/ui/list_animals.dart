@@ -7,6 +7,8 @@ import 'package:cat_dog_encyclopedia/ui/dog_details_page.dart';
 import 'package:cat_dog_encyclopedia/model/Cat.dart';
 import 'package:cat_dog_encyclopedia/model/Dog.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+
+import 'package:connectivity/connectivity.dart';
 import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
 
 
@@ -22,6 +24,8 @@ class ListAnimalsPage extends StatefulWidget {
 }
 
 class _ListAnimalsPageState extends State<ListAnimalsPage> {
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   final double _borderRadius = 30.0;
   final double _iconBorderRadius = 30.0;
@@ -100,9 +104,11 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     ):new Container();
     return Scaffold(
       appBar: _buildBar(context),
+      key: _scaffoldKey,
       body: _buildList(loadingIndicator),
       bottomNavigationBar: BottomAppBar(
         child: new Container(
+          color: Theme.Colors.secondaryColor,
           height: 50.0,
         ),
       ),
@@ -124,27 +130,22 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Theme.Colors.secondaryColor,
-                      borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(2.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
-                        child: Image(
-//                      placeholder: CircularProgressIndicator(
-//                        valueColor: new AlwaysStoppedAnimation<Color>(Theme.Colors.secondaryColor) ,
-//                      ),
-//                      imageUrl: filteredAnimals[i].imageRef,
-                          image: new AssetImage('${filteredAnimals[i].imagePath}'),
-                          fit: BoxFit.fill,
-                          width: _animalIconSize,
-                          height: _animalIconSize,
-
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(_iconBorderRadius)),
+                    child: CachedNetworkImage(
+                      placeholder: Container(
+                        width: 3*_animalIconSize/4,
+                        height:3*_animalIconSize/4,
+                        child: CircularProgressIndicator(
+                          valueColor: new AlwaysStoppedAnimation<Color>(Theme.Colors.secondaryColor) ,
                         ),
                       ),
+                      imageUrl: filteredAnimals[i].imageRef,
+//                      image: new AssetImage('${filteredAnimals[i].imagePath}'),
+                      fit: BoxFit.fill,
+                      width: _animalIconSize,
+                      height: _animalIconSize,
+
                     ),
                   ),
                 ),
@@ -183,7 +184,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   Widget _buildBar(BuildContext context) {
     return new AppBar(
-      backgroundColor: Theme.Colors.secondaryColor,
+      backgroundColor: Theme.Colors.primaryColor,
       title: _appBarTitle,
       leading: new IconButton(
         icon: _searchIcon,
@@ -215,7 +216,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 //            image: new AssetImage(Theme.Image.bgImage),
 //            fit: BoxFit.cover
 //        ),
-              color: Colors.white
+              color: Theme.Colors.secondaryColor
           ),
           child: ListView.builder(
             itemCount: animals == null ? 0 : filteredAnimals.length,
@@ -230,7 +231,29 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     );
   }
 
+  void showInSnackBar(String value) {
+    FocusScope.of(context).requestFocus(new FocusNode());
+    _scaffoldKey.currentState?.removeCurrentSnackBar();
+    _scaffoldKey.currentState.showSnackBar(new SnackBar(
+      content: new Text(
+        value,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            color: Colors.white,
+            fontSize: 16.0,
+            fontFamily: "WorkSansSemiBold"),
+      ),
+      backgroundColor: Colors.blue,
+      duration: Duration(seconds: 3),
+    ));
+  }
+
   void getData() async{
+    var connectivityResult = await (new Connectivity().checkConnectivity());
+    print (connectivityResult.toString());
+    if (connectivityResult == ConnectivityResult.none) {
+      showInSnackBar("No internet connection detected");
+    }
     final CollectionReference animalCollections =
     Firestore.instance.collection(widget.type);
     Stream<QuerySnapshot> snapshots = animalCollections.snapshots();

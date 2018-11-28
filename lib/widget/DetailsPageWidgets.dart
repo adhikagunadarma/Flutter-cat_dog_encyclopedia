@@ -26,10 +26,10 @@ Widget detailsTopContainer(
 
         child: ClipRRect(
           borderRadius: new BorderRadius.circular(_borderRadius),
-          child: Image(
-//            imageUrl : imageRef,
-//            placeholder: CircularProgressIndicator(),
-            image: new AssetImage(imageRef),
+          child: CachedNetworkImage(
+            imageUrl : imageRef,
+            placeholder: CircularProgressIndicator(),
+//            image: new AssetImage(imageRef),
             width: MediaQuery.of(context).size.width <= _widthThreshold
                 ? _widthThreshold
                 : MediaQuery.of(context).size.width,
@@ -76,7 +76,7 @@ Widget detailsBottomContainerMain(String dataLifespan, String dataSize, String d
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(_borderRadius),
       ),
-      color: Theme.Colors.secondaryColor,
+      color: Theme.Colors.primaryColor,
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: SingleChildScrollView(
@@ -97,7 +97,7 @@ Widget detailsBottomContainerExtra(String title, String data, int color) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: Card(
-      color: Theme.Colors.secondaryColor,
+      color: Theme.Colors.primaryColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(_borderRadius),
       ),
