@@ -5,8 +5,9 @@ import 'package:flutter/cupertino.dart';
 class Colors {
 
   const Colors();
-  static const Color primaryColor = const Color(0xFFFFFFFF);
-  static const Color secondaryColor = const Color(0xFFF25E76);
+  static const Color primaryColor = const Color(0xFF96deda);
+  static const Color secondaryColor = const Color(0xFF50c9c3);
+  static const Color thirdColor = const Color(0xFFFFFFFF);
 
 }
 
