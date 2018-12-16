@@ -9,8 +9,8 @@ dependencies:
   firebase_database : ^0.4.1
   firebase_storage : ^1.0.2
   firebase_admob: ^0.5.0
-  splashscreen: ^1.1.0
   cached_network_image: ^0.5.0+1
+  flutter_advanced_networkimage: ^0.3.12
   connectivity: ^0.3.2
 
   # The following adds the Cupertino Icons font to your application.
@@ -25,11 +25,11 @@ dev_dependencies:
     sdk: flutter
 
   font_awesome_flutter: ^8.0.1
-  flutter_launcher_icons: ^0.6.1
+  flutter_launcher_icons: ^0.7.0
 
 flutter_icons:
-  image_path: "assets/images/icon_logo.jpg"
-  android: true
+  image_path: "assets/images/catdog_logo.png"
+  android: trueflutte
   ios: true
 
 
@@ -49,337 +49,337 @@ flutter:
   assets:
 
   # mainlogo
-    - assets/images/catlogo.jpg
-    - assets/images/doglogo.jpg
-    - assets/images/background.jpg
-    - assets/images/icon_logo.jpg
+
+    - assets/images/catdog_logo.png
+    - assets/images/cat_icon.png
+    - assets/images/dog_icon.png
 
 
   # dogs
-    - assets/images/dogs/Affenpinscher.jpg
-    - assets/images/dogs/Afghan_Hound.jpg
-    - assets/images/dogs/Airedale_Terrier.jpg
-    - assets/images/dogs/Akita.jpg
-    - assets/images/dogs/Alaskan_Malamute.jpg
-    - assets/images/dogs/American_English_Coonhound.jpg
-    - assets/images/dogs/American_Eskimo_Dog.jpg
-    - assets/images/dogs/American_Foxhound.jpg
-    - assets/images/dogs/American_Hairless_Terrier.jpg
-    - assets/images/dogs/American_Leopard_Hound.jpg
-    - assets/images/dogs/American_Staffordshire_Terrier.jpg
-    - assets/images/dogs/American_Water_Spaniel.jpg
-    - assets/images/dogs/Anatolian_Shepherd_Dog.jpg
-    - assets/images/dogs/Appenzeller_Sennenhund.jpg
-    - assets/images/dogs/Australian_Cattle_Dog.jpg
-    - assets/images/dogs/Australian_Kelpie.jpg
-    - assets/images/dogs/Australian_Shepherd.jpg
-    - assets/images/dogs/Australian_Stumpy_Tail_Cattle_Dog.jpg
-    - assets/images/dogs/Australian_Terrier.jpg
-    - assets/images/dogs/Azawakh.jpg
-    - assets/images/dogs/Barbet.jpg
-    - assets/images/dogs/Basenji.jpg
-    - assets/images/dogs/Basset_Fauve_de_Bretagne.jpg
-    - assets/images/dogs/Basset_Hound.jpg
-    - assets/images/dogs/Bavarian_Mountain_Scent_Hound.jpg
-    - assets/images/dogs/Beagle.jpg
-    - assets/images/dogs/Bearded_Collie.jpg
-    - assets/images/dogs/Beauceron.jpg
-    - assets/images/dogs/Bedlington_Terrier.jpg
-    - assets/images/dogs/Belgian_Laekenois.jpg
-    - assets/images/dogs/Belgian_Sheepdog.jpg
-    - assets/images/dogs/Belgian_Malinois.jpg
-    - assets/images/dogs/Belgian_Tervuren.jpg
-    - assets/images/dogs/Bergamasco_Sheepdog.jpg
-    - assets/images/dogs/Berger_Picard.jpg
-    - assets/images/dogs/Bernese_Mountain_Dog.jpg
-    - assets/images/dogs/Bichon_Frise.jpg
-    - assets/images/dogs/Biewer_Terrier.jpg
-    - assets/images/dogs/Black_and_Tan_Coonhound.jpg
-    - assets/images/dogs/Black_Russian_Terrier.jpg
-    - assets/images/dogs/Bloodhound.jpg
-    - assets/images/dogs/Bluetick_Coonhound.jpg
-    - assets/images/dogs/Boerboel.jpg
-    - assets/images/dogs/Bolognese.jpg
-    - assets/images/dogs/Border_Collie.jpg
-    - assets/images/dogs/Border_Terrier.jpg
-    - assets/images/dogs/Borzoi.jpg
-    - assets/images/dogs/Boston_Terrier.jpg
-    - assets/images/dogs/Bouvier_des_Flandres.jpg
-    - assets/images/dogs/Boxer.jpg
-    - assets/images/dogs/Boykin_Spaniel.jpg
-    - assets/images/dogs/Bracco_Italiano.jpg
-    - assets/images/dogs/Braque_Francais_Pyrenean.jpg
-    - assets/images/dogs/Briard.jpg
-    - assets/images/dogs/Brittany.jpg
-    - assets/images/dogs/Broholmer.jpg
-    - assets/images/dogs/Brussels_Griffon.jpg
-    - assets/images/dogs/Bull_Terrier.jpg
-    - assets/images/dogs/Bulldog.jpg
-    - assets/images/dogs/Bullmastiff.jpg
-    - assets/images/dogs/Cairn_Terrier.jpg
-    - assets/images/dogs/Canaan_Dog.jpg
-    - assets/images/dogs/Cane_Corso.jpg
-    - assets/images/dogs/Cardigan_Welsh_Corgi.jpg
-    - assets/images/dogs/Carolina_Dog.jpg
-    - assets/images/dogs/Catahoula_Leopard_Dog.jpg
-    - assets/images/dogs/Caucasian_Shepherd_Dog.jpg
-    - assets/images/dogs/Cavalier_King_Charles_Spaniel.jpg
-    - assets/images/dogs/Central_Asian_Shepherd_Dog.jpg
-    - assets/images/dogs/Cesky_Terrier.jpg
-    - assets/images/dogs/Chesapeake_Bay_Retriever.jpg
-    - assets/images/dogs/Chihuahua.jpg
-    - assets/images/dogs/Chinese_Crested.jpg
-    - assets/images/dogs/Chinese_Shar-Pei.jpg
-    - assets/images/dogs/Chinook.jpg
-    - assets/images/dogs/Chow_Chow.jpg
-    - assets/images/dogs/Cirnecco.jpg
-    - assets/images/dogs/Clumber_Spaniel.jpg
-    - assets/images/dogs/Cocker_Spaniel.jpg
-    - assets/images/dogs/Collie.jpg
-    - assets/images/dogs/Coton_de_Tulear.jpg
-    - assets/images/dogs/Croatian_Sheepdog.jpg
-    - assets/images/dogs/Curly-Coated_Retriever.jpg
-    - assets/images/dogs/Czechoslovakian_Vlcak.jpg
-    - assets/images/dogs/Dachshund.jpg
-    - assets/images/dogs/Dalmatian.jpg
-    - assets/images/dogs/Dandie_Dinmont_Terrier.jpg
-    - assets/images/dogs/Danish-Swedish_Farmdog.jpg
-    - assets/images/dogs/Deutscher_Wachtelhund.jpg
-    - assets/images/dogs/Doberman_Pinscher.jpg
-    - assets/images/dogs/Dogo_Argentino.jpg
-    - assets/images/dogs/Dogue_de_Bordeaux.jpg
-    - assets/images/dogs/Drentsche_Patrijshond.jpg
-    - assets/images/dogs/Drever.jpg
-    - assets/images/dogs/Dutch_Shepherd.jpg
-    - assets/images/dogs/English_Cocker_Spaniel.jpg
-    - assets/images/dogs/English_Foxhound.jpg
-    - assets/images/dogs/English_Setter.jpg
-    - assets/images/dogs/English_Springer_Spaniel.jpg
-    - assets/images/dogs/English_Toy_Spaniel.jpg
-    - assets/images/dogs/Entlebucher_Mountain_Dog.jpg
-    - assets/images/dogs/Estrela_Mountain_Dog.jpg
-    - assets/images/dogs/Eurasier.jpg
-    - assets/images/dogs/Field_Spaniel.jpg
-    - assets/images/dogs/Finnish_Lapphund.jpg
-    - assets/images/dogs/Finnish_Spitz.jpg
-    - assets/images/dogs/Flat-Coated_Retriever.jpg
-    - assets/images/dogs/French_Bulldog.jpg
-    - assets/images/dogs/French_Spaniel.jpg
-    - assets/images/dogs/German_Longhaired_Pointer.jpg
-    - assets/images/dogs/German_Pinscher.jpg
-    - assets/images/dogs/German_Shepherd_Dog.jpg
-    - assets/images/dogs/German_Shorthaired_Pointer.jpg
-    - assets/images/dogs/German_Spitz.jpg
-    - assets/images/dogs/German_Wirehaired_Pointer.jpg
-    - assets/images/dogs/Giant_Schnauzer.jpg
-    - assets/images/dogs/Glen_of_Imaal_Terrier.jpg
-    - assets/images/dogs/Golden_Retriever.jpg
-    - assets/images/dogs/Gordon_Setter.jpg
-    - assets/images/dogs/Grand_Basset_Griffon_Vendeen.jpg
-    - assets/images/dogs/Great_Dane.jpg
-    - assets/images/dogs/Great_Pyrenees.jpg
-    - assets/images/dogs/Greater_Swiss_Mountain_Dog.jpg
-    - assets/images/dogs/Greyhound.jpg
-    - assets/images/dogs/Hamiltonstovare.jpg
-    - assets/images/dogs/Hanoverian_Scenthound.jpg
-    - assets/images/dogs/Harrier.jpg
-    - assets/images/dogs/Havanese.jpg
-    - assets/images/dogs/Hokkaido.jpg
-    - assets/images/dogs/Hovawart.jpg
-    - assets/images/dogs/Ibizan_Hound.jpg
-    - assets/images/dogs/Icelandic_Sheepdog.jpg
-    - assets/images/dogs/Irish_Red_And_White_Setter.jpg
-    - assets/images/dogs/Irish_Setter.jpg
-    - assets/images/dogs/Irish_Terrier.jpg
-    - assets/images/dogs/Irish_Water_Spaniel.jpg
-    - assets/images/dogs/Irish_Wolfhound.jpg
-    - assets/images/dogs/Italian_Greyhound.jpg
-    - assets/images/dogs/Jagdterrier.jpg
-    - assets/images/dogs/Japanese_Chin.jpg
-    - assets/images/dogs/Jindo.jpg
-    - assets/images/dogs/Kai_Ken.jpg
-    - assets/images/dogs/Karelian_Bear_Dog.jpg
-    - assets/images/dogs/Keeshond.jpg
-    - assets/images/dogs/Kerry_Blue_Terrier.jpg
-    - assets/images/dogs/Kishu_Ken.jpg
-    - assets/images/dogs/Komondor.jpg
-    - assets/images/dogs/Kromfohrlander.jpg
-    - assets/images/dogs/Kuvasz.jpg
-    - assets/images/dogs/Labrador_Retriever.jpg
-    - assets/images/dogs/Lagotto_Romagnolo.jpg
-    - assets/images/dogs/Lakeland_Terrier.jpg
-    - assets/images/dogs/Lancashire_Heeler.jpg
-    - assets/images/dogs/Lapponian_Herder.jpg
-    - assets/images/dogs/Leonberger.jpg
-    - assets/images/dogs/Lhasa_Apso.jpg
-    - assets/images/dogs/Lowchen.jpg
-    - assets/images/dogs/Maltese.jpg
-    - assets/images/dogs/Manchester_Terrier_Standard.jpg
-    - assets/images/dogs/Manchester_Terrier_Toy.jpg
-    - assets/images/dogs/Mastiff.jpg
-    - assets/images/dogs/Miniature_American_Shepherd.jpg
-    - assets/images/dogs/Miniature_Bull_Terrier.jpg
-    - assets/images/dogs/Miniature_Pinscher.jpg
-    - assets/images/dogs/Miniature_Schnauzer.jpg
-    - assets/images/dogs/Mountain_Cur.jpg
-    - assets/images/dogs/Mudi.jpg
-    - assets/images/dogs/Nederlandse_Kooikerhondje.jpg
-    - assets/images/dogs/Neopolitan_Mastiff.jpg
-    - assets/images/dogs/Newfoundland.jpg
-    - assets/images/dogs/Norfolk_Terrier.jpg
-    - assets/images/dogs/Norrbottenspets.jpg
-    - assets/images/dogs/Norwegian_Buhund.jpg
-    - assets/images/dogs/Norwegian_Elkhound.jpg
-    - assets/images/dogs/Norwegian_Lundehund.jpg
-    - assets/images/dogs/Norwich_Terrier.jpg
-    - assets/images/dogs/Nova_Scotia_Duck_Tolling_Retriever.jpg
-    - assets/images/dogs/Old_English_Sheepdogs.jpg
-    - assets/images/dogs/Otterhound.jpg
-    - assets/images/dogs/Papillon.jpg
-    - assets/images/dogs/Parson_Russell_Terrier.jpg
-    - assets/images/dogs/Pekingese.jpg
-    - assets/images/dogs/Pembroke_Welsh_Corgi.jpg
-    - assets/images/dogs/Perro_de_Presa_Canario.jpg
-    - assets/images/dogs/Peruvian_Inca_Orchid.jpg
-    - assets/images/dogs/Petit_Basset_Griffon_Vendeen.jpg
-    - assets/images/dogs/Pharaoh_Hound.jpg
-    - assets/images/dogs/Plott.jpg
-    - assets/images/dogs/Pointer.jpg
-    - assets/images/dogs/Polish_Lowland_Sheepdog.jpg
-    - assets/images/dogs/Pomeranian.jpg
-    - assets/images/dogs/Poodle_Standard.jpg
-    - assets/images/dogs/Poodle_Toy.jpg
-    - assets/images/dogs/Porcelaine.jpg
-    - assets/images/dogs/Portuguese_Podengo.jpg
-    - assets/images/dogs/Portuguese_Podengo_Pequeno.jpg
-    - assets/images/dogs/Portuguese_Pointer.jpg
-    - assets/images/dogs/Portuguese_Sheepdog.jpg
-    - assets/images/dogs/Portuguese_Water_Dog.jpg
-    - assets/images/dogs/Pudelpointer.jpg
-    - assets/images/dogs/Pug.jpg
-    - assets/images/dogs/Puli.jpg
-    - assets/images/dogs/Pumi.jpg
-    - assets/images/dogs/Pyrenean_Mastiff.jpg
-    - assets/images/dogs/Pyrenean_Shepherd.jpg
-    - assets/images/dogs/Rafeiro_do_Alentejo.jpg
-    - assets/images/dogs/Rat_Terrier.jpg
-    - assets/images/dogs/Redbone_Coonhound.jpg
-    - assets/images/dogs/Rhodesian_Ridgeback.jpg
-    - assets/images/dogs/Romanian_Mioritic_Shepherd_Dog.jpg
-    - assets/images/dogs/Rottweiler.jpg
-    - assets/images/dogs/Russell_Terrier.jpg
-    - assets/images/dogs/Russian_Toy.jpg
-    - assets/images/dogs/Russian_Tysvetnaya_Bolonka.jpg
-    - assets/images/dogs/Saint_Bernard.jpg
-    - assets/images/dogs/Saluki.jpg
-    - assets/images/dogs/Samoyed.jpg
-    - assets/images/dogs/Schapendoes.jpg
-    - assets/images/dogs/Schipperke.jpg
-    - assets/images/dogs/Scottish_Deerhound.jpg
-    - assets/images/dogs/Scottish_Terrier.jpg
-    - assets/images/dogs/Sealyham_Terrier.jpg
-    - assets/images/dogs/Segugio_Italiano.jpg
-    - assets/images/dogs/Shetland_Sheepdog.jpg
-    - assets/images/dogs/Shiba_Inu.jpg
-    - assets/images/dogs/Shih_Tzu.jpg
-    - assets/images/dogs/Shikoku.jpg
-    - assets/images/dogs/Siberian_Husky.jpg
-    - assets/images/dogs/Silky_Terrier.jpg
-    - assets/images/dogs/Skye_Terrier.jpg
-    - assets/images/dogs/Sloughi.jpg
-    - assets/images/dogs/Slovakian_Wirehaired_Pointer.jpg
-    - assets/images/dogs/Slovensky_Cuvac.jpg
-    - assets/images/dogs/Slovensky_Kopov.jpg
-    - assets/images/dogs/Small_Munsterlander_Pointer.jpg
-    - assets/images/dogs/Smooth_Fox_Terrier.jpg
-    - assets/images/dogs/Soft_Coated_Wheaten_Terrier.jpg
-    - assets/images/dogs/Spanish_Mastiff.jpg
-    - assets/images/dogs/Spanish_Water_Dog.jpg
-    - assets/images/dogs/Spinone_Italiano.jpg
-    - assets/images/dogs/Stabyhoun.jpg
-    - assets/images/dogs/Staffordshire_Bull_Terrier.jpg
-    - assets/images/dogs/Standard_Schnauzer.jpg
-    - assets/images/dogs/Sussex_Spaniel.jpg
-    - assets/images/dogs/Swedish_Lapphund.jpg
-    - assets/images/dogs/Swedish_Vallhund.jpg
-    - assets/images/dogs/Taiwan_Dog.jpg
-    - assets/images/dogs/Teddy_Roosevelt_Terrier.jpg
-    - assets/images/dogs/Thai_Ridgeback.jpg
-    - assets/images/dogs/Tibetan_Mastiff.jpg
-    - assets/images/dogs/Tibetan_Spaniel.jpg
-    - assets/images/dogs/Tibetan_Terrier.jpg
-    - assets/images/dogs/Tornjak.jpg
-    - assets/images/dogs/Tosa.jpg
-    - assets/images/dogs/Toy_Fox_Terrier.jpg
-    - assets/images/dogs/Transylvanian_Hound.jpg
-    - assets/images/dogs/Treeing_Tennessee_Brindle.jpg
-
-    - assets/images/dogs/Treeing_Walker_Coonhound.jpg
-    - assets/images/dogs/Vizsla.jpg
-    - assets/images/dogs/Weimaraner.jpg
-    - assets/images/dogs/Welsh_Springer_Spaniel.jpg
-    - assets/images/dogs/Welsh_Terrier.jpg
-    - assets/images/dogs/West_Highland_White_Terrier.jpg
-    - assets/images/dogs/Whippet.jpg
-    - assets/images/dogs/Wire_Fox_Terrier.jpg
-    - assets/images/dogs/Wirehaired_Pointing_Griffon.jpg
-    - assets/images/dogs/Wirehaired_Vizsla.jpg
-    - assets/images/dogs/Working_Kelpie.jpg
-    - assets/images/dogs/Xoloitzcuintli.jpg
-    - assets/images/dogs/Yakutian_Laika.jpg
-    - assets/images/dogs/Yorkshire_Terrier.jpg
-
-  # cats
-    - assets/images/cats/Abyssinian.jpg
-    - assets/images/cats/American_Bobtail.jpg
-    - assets/images/cats/American_Curl.jpg
-    - assets/images/cats/American_Shorthair.jpg
-    - assets/images/cats/American_Wirehair.jpg
-    - assets/images/cats/Balinese.jpg
-    - assets/images/cats/Bengal.jpg
-    - assets/images/cats/Birman.jpg
-    - assets/images/cats/Bombay.jpg
-    - assets/images/cats/British_Shorthair.jpg
-    - assets/images/cats/Burmese.jpg
-    - assets/images/cats/Burmilla.jpg
-    - assets/images/cats/Chartreux.jpg
-    - assets/images/cats/Chinese_Li_Hua.jpg
-    - assets/images/cats/Colorpoint_Shorthair.jpg
-    - assets/images/cats/Cornish_Rex.jpg
-    - assets/images/cats/Cymric.jpg
-    - assets/images/cats/Devon_Rex.jpg
-    - assets/images/cats/Egyptian_Mau.jpg
-    - assets/images/cats/European_Burmese.jpg
-    - assets/images/cats/Exotic.jpg
-    - assets/images/cats/Havana_Brown.jpg
-    - assets/images/cats/Himalayan.jpg
-    - assets/images/cats/Japanese_Bobtail.jpg
-    - assets/images/cats/Javanese.jpg
-    - assets/images/cats/Korat.jpg
-    - assets/images/cats/LaPerm.jpg
-    - assets/images/cats/Maine_Coon.jpg
-    - assets/images/cats/Manx.jpg
-    - assets/images/cats/Nebelung.jpg
-    - assets/images/cats/Norwegian_Forest.jpg
-    - assets/images/cats/Ocicat.jpg
-    - assets/images/cats/Oriental.jpg
-    - assets/images/cats/Persian.jpg
-    - assets/images/cats/Pixie-Bob.jpg
-    - assets/images/cats/Ragamuffin.jpg
-    - assets/images/cats/Ragdoll_Cat.jpg
-    - assets/images/cats/Russian_Blue.jpg
-    - assets/images/cats/Savannah.jpg
-    - assets/images/cats/Scottish_Fold.jpg
-    - assets/images/cats/Selkirk_Rex.jpg
-    - assets/images/cats/Siamese_Cat.jpg
-    - assets/images/cats/Siberian.jpg
-    - assets/images/cats/Singapura.jpg
-    - assets/images/cats/Snowshoe.jpg
-    - assets/images/cats/Somali.jpg
-    - assets/images/cats/Sphynx.jpg
-    - assets/images/cats/Tonkinese.jpg
-    - assets/images/cats/Turkish_Angora.jpg
-    - assets/images/cats/Turkish_Van.jpg
+#    - assets/images/dogs/Affenpinscher.jpg
+#    - assets/images/dogs/Afghan_Hound.jpg
+#    - assets/images/dogs/Airedale_Terrier.jpg
+#    - assets/images/dogs/Akita.jpg
+#    - assets/images/dogs/Alaskan_Malamute.jpg
+#    - assets/images/dogs/American_English_Coonhound.jpg
+#    - assets/images/dogs/American_Eskimo_Dog.jpg
+#    - assets/images/dogs/American_Foxhound.jpg
+#    - assets/images/dogs/American_Hairless_Terrier.jpg
+#    - assets/images/dogs/American_Leopard_Hound.jpg
+#    - assets/images/dogs/American_Staffordshire_Terrier.jpg
+#    - assets/images/dogs/American_Water_Spaniel.jpg
+#    - assets/images/dogs/Anatolian_Shepherd_Dog.jpg
+#    - assets/images/dogs/Appenzeller_Sennenhund.jpg
+#    - assets/images/dogs/Australian_Cattle_Dog.jpg
+#    - assets/images/dogs/Australian_Kelpie.jpg
+#    - assets/images/dogs/Australian_Shepherd.jpg
+#    - assets/images/dogs/Australian_Stumpy_Tail_Cattle_Dog.jpg
+#    - assets/images/dogs/Australian_Terrier.jpg
+#    - assets/images/dogs/Azawakh.jpg
+#    - assets/images/dogs/Barbet.jpg
+#    - assets/images/dogs/Basenji.jpg
+#    - assets/images/dogs/Basset_Fauve_de_Bretagne.jpg
+#    - assets/images/dogs/Basset_Hound.jpg
+#    - assets/images/dogs/Bavarian_Mountain_Scent_Hound.jpg
+#    - assets/images/dogs/Beagle.jpg
+#    - assets/images/dogs/Bearded_Collie.jpg
+#    - assets/images/dogs/Beauceron.jpg
+#    - assets/images/dogs/Bedlington_Terrier.jpg
+#    - assets/images/dogs/Belgian_Laekenois.jpg
+#    - assets/images/dogs/Belgian_Sheepdog.jpg
+#    - assets/images/dogs/Belgian_Malinois.jpg
+#    - assets/images/dogs/Belgian_Tervuren.jpg
+#    - assets/images/dogs/Bergamasco_Sheepdog.jpg
+#    - assets/images/dogs/Berger_Picard.jpg
+#    - assets/images/dogs/Bernese_Mountain_Dog.jpg
+#    - assets/images/dogs/Bichon_Frise.jpg
+#    - assets/images/dogs/Biewer_Terrier.jpg
+#    - assets/images/dogs/Black_and_Tan_Coonhound.jpg
+#    - assets/images/dogs/Black_Russian_Terrier.jpg
+#    - assets/images/dogs/Bloodhound.jpg
+#    - assets/images/dogs/Bluetick_Coonhound.jpg
+#    - assets/images/dogs/Boerboel.jpg
+#    - assets/images/dogs/Bolognese.jpg
+#    - assets/images/dogs/Border_Collie.jpg
+#    - assets/images/dogs/Border_Terrier.jpg
+#    - assets/images/dogs/Borzoi.jpg
+#    - assets/images/dogs/Boston_Terrier.jpg
+#    - assets/images/dogs/Bouvier_des_Flandres.jpg
+#    - assets/images/dogs/Boxer.jpg
+#    - assets/images/dogs/Boykin_Spaniel.jpg
+#    - assets/images/dogs/Bracco_Italiano.jpg
+#    - assets/images/dogs/Braque_Francais_Pyrenean.jpg
+#    - assets/images/dogs/Briard.jpg
+#    - assets/images/dogs/Brittany.jpg
+#    - assets/images/dogs/Broholmer.jpg
+#    - assets/images/dogs/Brussels_Griffon.jpg
+#    - assets/images/dogs/Bull_Terrier.jpg
+#    - assets/images/dogs/Bulldog.jpg
+#    - assets/images/dogs/Bullmastiff.jpg
+#    - assets/images/dogs/Cairn_Terrier.jpg
+#    - assets/images/dogs/Canaan_Dog.jpg
+#    - assets/images/dogs/Cane_Corso.jpg
+#    - assets/images/dogs/Cardigan_Welsh_Corgi.jpg
+#    - assets/images/dogs/Carolina_Dog.jpg
+#    - assets/images/dogs/Catahoula_Leopard_Dog.jpg
+#    - assets/images/dogs/Caucasian_Shepherd_Dog.jpg
+#    - assets/images/dogs/Cavalier_King_Charles_Spaniel.jpg
+#    - assets/images/dogs/Central_Asian_Shepherd_Dog.jpg
+#    - assets/images/dogs/Cesky_Terrier.jpg
+#    - assets/images/dogs/Chesapeake_Bay_Retriever.jpg
+#    - assets/images/dogs/Chihuahua.jpg
+#    - assets/images/dogs/Chinese_Crested.jpg
+#    - assets/images/dogs/Chinese_Shar-Pei.jpg
+#    - assets/images/dogs/Chinook.jpg
+#    - assets/images/dogs/Chow_Chow.jpg
+#    - assets/images/dogs/Cirnecco.jpg
+#    - assets/images/dogs/Clumber_Spaniel.jpg
+#    - assets/images/dogs/Cocker_Spaniel.jpg
+#    - assets/images/dogs/Collie.jpg
+#    - assets/images/dogs/Coton_de_Tulear.jpg
+#    - assets/images/dogs/Croatian_Sheepdog.jpg
+#    - assets/images/dogs/Curly-Coated_Retriever.jpg
+#    - assets/images/dogs/Czechoslovakian_Vlcak.jpg
+#    - assets/images/dogs/Dachshund.jpg
+#    - assets/images/dogs/Dalmatian.jpg
+#    - assets/images/dogs/Dandie_Dinmont_Terrier.jpg
+#    - assets/images/dogs/Danish-Swedish_Farmdog.jpg
+#    - assets/images/dogs/Deutscher_Wachtelhund.jpg
+#    - assets/images/dogs/Doberman_Pinscher.jpg
+#    - assets/images/dogs/Dogo_Argentino.jpg
+#    - assets/images/dogs/Dogue_de_Bordeaux.jpg
+#    - assets/images/dogs/Drentsche_Patrijshond.jpg
+#    - assets/images/dogs/Drever.jpg
+#    - assets/images/dogs/Dutch_Shepherd.jpg
+#    - assets/images/dogs/English_Cocker_Spaniel.jpg
+#    - assets/images/dogs/English_Foxhound.jpg
+#    - assets/images/dogs/English_Setter.jpg
+#    - assets/images/dogs/English_Springer_Spaniel.jpg
+#    - assets/images/dogs/English_Toy_Spaniel.jpg
+#    - assets/images/dogs/Entlebucher_Mountain_Dog.jpg
+#    - assets/images/dogs/Estrela_Mountain_Dog.jpg
+#    - assets/images/dogs/Eurasier.jpg
+#    - assets/images/dogs/Field_Spaniel.jpg
+#    - assets/images/dogs/Finnish_Lapphund.jpg
+#    - assets/images/dogs/Finnish_Spitz.jpg
+#    - assets/images/dogs/Flat-Coated_Retriever.jpg
+#    - assets/images/dogs/French_Bulldog.jpg
+#    - assets/images/dogs/French_Spaniel.jpg
+#    - assets/images/dogs/German_Longhaired_Pointer.jpg
+#    - assets/images/dogs/German_Pinscher.jpg
+#    - assets/images/dogs/German_Shepherd_Dog.jpg
+#    - assets/images/dogs/German_Shorthaired_Pointer.jpg
+#    - assets/images/dogs/German_Spitz.jpg
+#    - assets/images/dogs/German_Wirehaired_Pointer.jpg
+#    - assets/images/dogs/Giant_Schnauzer.jpg
+#    - assets/images/dogs/Glen_of_Imaal_Terrier.jpg
+#    - assets/images/dogs/Golden_Retriever.jpg
+#    - assets/images/dogs/Gordon_Setter.jpg
+#    - assets/images/dogs/Grand_Basset_Griffon_Vendeen.jpg
+#    - assets/images/dogs/Great_Dane.jpg
+#    - assets/images/dogs/Great_Pyrenees.jpg
+#    - assets/images/dogs/Greater_Swiss_Mountain_Dog.jpg
+#    - assets/images/dogs/Greyhound.jpg
+#    - assets/images/dogs/Hamiltonstovare.jpg
+#    - assets/images/dogs/Hanoverian_Scenthound.jpg
+#    - assets/images/dogs/Harrier.jpg
+#    - assets/images/dogs/Havanese.jpg
+#    - assets/images/dogs/Hokkaido.jpg
+#    - assets/images/dogs/Hovawart.jpg
+#    - assets/images/dogs/Ibizan_Hound.jpg
+#    - assets/images/dogs/Icelandic_Sheepdog.jpg
+#    - assets/images/dogs/Irish_Red_And_White_Setter.jpg
+#    - assets/images/dogs/Irish_Setter.jpg
+#    - assets/images/dogs/Irish_Terrier.jpg
+#    - assets/images/dogs/Irish_Water_Spaniel.jpg
+#    - assets/images/dogs/Irish_Wolfhound.jpg
+#    - assets/images/dogs/Italian_Greyhound.jpg
+#    - assets/images/dogs/Jagdterrier.jpg
+#    - assets/images/dogs/Japanese_Chin.jpg
+#    - assets/images/dogs/Jindo.jpg
+#    - assets/images/dogs/Kai_Ken.jpg
+#    - assets/images/dogs/Karelian_Bear_Dog.jpg
+#    - assets/images/dogs/Keeshond.jpg
+#    - assets/images/dogs/Kerry_Blue_Terrier.jpg
+#    - assets/images/dogs/Kishu_Ken.jpg
+#    - assets/images/dogs/Komondor.jpg
+#    - assets/images/dogs/Kromfohrlander.jpg
+#    - assets/images/dogs/Kuvasz.jpg
+#    - assets/images/dogs/Labrador_Retriever.jpg
+#    - assets/images/dogs/Lagotto_Romagnolo.jpg
+#    - assets/images/dogs/Lakeland_Terrier.jpg
+#    - assets/images/dogs/Lancashire_Heeler.jpg
+#    - assets/images/dogs/Lapponian_Herder.jpg
+#    - assets/images/dogs/Leonberger.jpg
+#    - assets/images/dogs/Lhasa_Apso.jpg
+#    - assets/images/dogs/Lowchen.jpg
+#    - assets/images/dogs/Maltese.jpg
+#    - assets/images/dogs/Manchester_Terrier_Standard.jpg
+#    - assets/images/dogs/Manchester_Terrier_Toy.jpg
+#    - assets/images/dogs/Mastiff.jpg
+#    - assets/images/dogs/Miniature_American_Shepherd.jpg
+#    - assets/images/dogs/Miniature_Bull_Terrier.jpg
+#    - assets/images/dogs/Miniature_Pinscher.jpg
+#    - assets/images/dogs/Miniature_Schnauzer.jpg
+#    - assets/images/dogs/Mountain_Cur.jpg
+#    - assets/images/dogs/Mudi.jpg
+#    - assets/images/dogs/Nederlandse_Kooikerhondje.jpg
+#    - assets/images/dogs/Neopolitan_Mastiff.jpg
+#    - assets/images/dogs/Newfoundland.jpg
+#    - assets/images/dogs/Norfolk_Terrier.jpg
+#    - assets/images/dogs/Norrbottenspets.jpg
+#    - assets/images/dogs/Norwegian_Buhund.jpg
+#    - assets/images/dogs/Norwegian_Elkhound.jpg
+#    - assets/images/dogs/Norwegian_Lundehund.jpg
+#    - assets/images/dogs/Norwich_Terrier.jpg
+#    - assets/images/dogs/Nova_Scotia_Duck_Tolling_Retriever.jpg
+#    - assets/images/dogs/Old_English_Sheepdogs.jpg
+#    - assets/images/dogs/Otterhound.jpg
+#    - assets/images/dogs/Papillon.jpg
+#    - assets/images/dogs/Parson_Russell_Terrier.jpg
+#    - assets/images/dogs/Pekingese.jpg
+#    - assets/images/dogs/Pembroke_Welsh_Corgi.jpg
+#    - assets/images/dogs/Perro_de_Presa_Canario.jpg
+#    - assets/images/dogs/Peruvian_Inca_Orchid.jpg
+#    - assets/images/dogs/Petit_Basset_Griffon_Vendeen.jpg
+#    - assets/images/dogs/Pharaoh_Hound.jpg
+#    - assets/images/dogs/Plott.jpg
+#    - assets/images/dogs/Pointer.jpg
+#    - assets/images/dogs/Polish_Lowland_Sheepdog.jpg
+#    - assets/images/dogs/Pomeranian.jpg
+#    - assets/images/dogs/Poodle_Standard.jpg
+#    - assets/images/dogs/Poodle_Toy.jpg
+#    - assets/images/dogs/Porcelaine.jpg
+#    - assets/images/dogs/Portuguese_Podengo.jpg
+#    - assets/images/dogs/Portuguese_Podengo_Pequeno.jpg
+#    - assets/images/dogs/Portuguese_Pointer.jpg
+#    - assets/images/dogs/Portuguese_Sheepdog.jpg
+#    - assets/images/dogs/Portuguese_Water_Dog.jpg
+#    - assets/images/dogs/Pudelpointer.jpg
+#    - assets/images/dogs/Pug.jpg
+#    - assets/images/dogs/Puli.jpg
+#    - assets/images/dogs/Pumi.jpg
+#    - assets/images/dogs/Pyrenean_Mastiff.jpg
+#    - assets/images/dogs/Pyrenean_Shepherd.jpg
+#    - assets/images/dogs/Rafeiro_do_Alentejo.jpg
+#    - assets/images/dogs/Rat_Terrier.jpg
+#    - assets/images/dogs/Redbone_Coonhound.jpg
+#    - assets/images/dogs/Rhodesian_Ridgeback.jpg
+#    - assets/images/dogs/Romanian_Mioritic_Shepherd_Dog.jpg
+#    - assets/images/dogs/Rottweiler.jpg
+#    - assets/images/dogs/Russell_Terrier.jpg
+#    - assets/images/dogs/Russian_Toy.jpg
+#    - assets/images/dogs/Russian_Tysvetnaya_Bolonka.jpg
+#    - assets/images/dogs/Saint_Bernard.jpg
+#    - assets/images/dogs/Saluki.jpg
+#    - assets/images/dogs/Samoyed.jpg
+#    - assets/images/dogs/Schapendoes.jpg
+#    - assets/images/dogs/Schipperke.jpg
+#    - assets/images/dogs/Scottish_Deerhound.jpg
+#    - assets/images/dogs/Scottish_Terrier.jpg
+#    - assets/images/dogs/Sealyham_Terrier.jpg
+#    - assets/images/dogs/Segugio_Italiano.jpg
+#    - assets/images/dogs/Shetland_Sheepdog.jpg
+#    - assets/images/dogs/Shiba_Inu.jpg
+#    - assets/images/dogs/Shih_Tzu.jpg
+#    - assets/images/dogs/Shikoku.jpg
+#    - assets/images/dogs/Siberian_Husky.jpg
+#    - assets/images/dogs/Silky_Terrier.jpg
+#    - assets/images/dogs/Skye_Terrier.jpg
+#    - assets/images/dogs/Sloughi.jpg
+#    - assets/images/dogs/Slovakian_Wirehaired_Pointer.jpg
+#    - assets/images/dogs/Slovensky_Cuvac.jpg
+#    - assets/images/dogs/Slovensky_Kopov.jpg
+#    - assets/images/dogs/Small_Munsterlander_Pointer.jpg
+#    - assets/images/dogs/Smooth_Fox_Terrier.jpg
+#    - assets/images/dogs/Soft_Coated_Wheaten_Terrier.jpg
+#    - assets/images/dogs/Spanish_Mastiff.jpg
+#    - assets/images/dogs/Spanish_Water_Dog.jpg
+#    - assets/images/dogs/Spinone_Italiano.jpg
+#    - assets/images/dogs/Stabyhoun.jpg
+#    - assets/images/dogs/Staffordshire_Bull_Terrier.jpg
+#    - assets/images/dogs/Standard_Schnauzer.jpg
+#    - assets/images/dogs/Sussex_Spaniel.jpg
+#    - assets/images/dogs/Swedish_Lapphund.jpg
+#    - assets/images/dogs/Swedish_Vallhund.jpg
+#    - assets/images/dogs/Taiwan_Dog.jpg
+#    - assets/images/dogs/Teddy_Roosevelt_Terrier.jpg
+#    - assets/images/dogs/Thai_Ridgeback.jpg
+#    - assets/images/dogs/Tibetan_Mastiff.jpg
+#    - assets/images/dogs/Tibetan_Spaniel.jpg
+#    - assets/images/dogs/Tibetan_Terrier.jpg
+#    - assets/images/dogs/Tornjak.jpg
+#    - assets/images/dogs/Tosa.jpg
+#    - assets/images/dogs/Toy_Fox_Terrier.jpg
+#    - assets/images/dogs/Transylvanian_Hound.jpg
+#    - assets/images/dogs/Treeing_Tennessee_Brindle.jpg
+#
+#    - assets/images/dogs/Treeing_Walker_Coonhound.jpg
+#    - assets/images/dogs/Vizsla.jpg
+#    - assets/images/dogs/Weimaraner.jpg
+#    - assets/images/dogs/Welsh_Springer_Spaniel.jpg
+#    - assets/images/dogs/Welsh_Terrier.jpg
+#    - assets/images/dogs/West_Highland_White_Terrier.jpg
+#    - assets/images/dogs/Whippet.jpg
+#    - assets/images/dogs/Wire_Fox_Terrier.jpg
+#    - assets/images/dogs/Wirehaired_Pointing_Griffon.jpg
+#    - assets/images/dogs/Wirehaired_Vizsla.jpg
+#    - assets/images/dogs/Working_Kelpie.jpg
+#    - assets/images/dogs/Xoloitzcuintli.jpg
+#    - assets/images/dogs/Yakutian_Laika.jpg
+#    - assets/images/dogs/Yorkshire_Terrier.jpg
+#
+#  # cats
+#    - assets/images/cats/Abyssinian.jpg
+#    - assets/images/cats/American_Bobtail.jpg
+#    - assets/images/cats/American_Curl.jpg
+#    - assets/images/cats/American_Shorthair.jpg
+#    - assets/images/cats/American_Wirehair.jpg
+#    - assets/images/cats/Balinese.jpg
+#    - assets/images/cats/Bengal.jpg
+#    - assets/images/cats/Birman.jpg
+#    - assets/images/cats/Bombay.jpg
+#    - assets/images/cats/British_Shorthair.jpg
+#    - assets/images/cats/Burmese.jpg
+#    - assets/images/cats/Burmilla.jpg
+#    - assets/images/cats/Chartreux.jpg
+#    - assets/images/cats/Chinese_Li_Hua.jpg
+#    - assets/images/cats/Colorpoint_Shorthair.jpg
+#    - assets/images/cats/Cornish_Rex.jpg
+#    - assets/images/cats/Cymric.jpg
+#    - assets/images/cats/Devon_Rex.jpg
+#    - assets/images/cats/Egyptian_Mau.jpg
+#    - assets/images/cats/European_Burmese.jpg
+#    - assets/images/cats/Exotic.jpg
+#    - assets/images/cats/Havana_Brown.jpg
+#    - assets/images/cats/Himalayan.jpg
+#    - assets/images/cats/Japanese_Bobtail.jpg
+#    - assets/images/cats/Javanese.jpg
+#    - assets/images/cats/Korat.jpg
+#    - assets/images/cats/LaPerm.jpg
+#    - assets/images/cats/Maine_Coon.jpg
+#    - assets/images/cats/Manx.jpg
+#    - assets/images/cats/Nebelung.jpg
+#    - assets/images/cats/Norwegian_Forest.jpg
+#    - assets/images/cats/Ocicat.jpg
+#    - assets/images/cats/Oriental.jpg
+#    - assets/images/cats/Persian.jpg
+#    - assets/images/cats/Pixie-Bob.jpg
+#    - assets/images/cats/Ragamuffin.jpg
+#    - assets/images/cats/Ragdoll_Cat.jpg
+#    - assets/images/cats/Russian_Blue.jpg
+#    - assets/images/cats/Savannah.jpg
+#    - assets/images/cats/Scottish_Fold.jpg
+#    - assets/images/cats/Selkirk_Rex.jpg
+#    - assets/images/cats/Siamese_Cat.jpg
+#    - assets/images/cats/Siberian.jpg
+#    - assets/images/cats/Singapura.jpg
+#    - assets/images/cats/Snowshoe.jpg
+#    - assets/images/cats/Somali.jpg
+#    - assets/images/cats/Sphynx.jpg
+#    - assets/images/cats/Tonkinese.jpg
+#    - assets/images/cats/Turkish_Angora.jpg
+#    - assets/images/cats/Turkish_Van.jpg
 
 
 
@@ -395,35 +395,53 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-      - family: WorkSansSemiBold
+#      - family: WorkSansSemiBold
+#        fonts:
+#          - asset: assets/fonts/Work_Sans/WorkSans-Semibold.ttf
+#
+#      - family: WorkSansBold
+#        fonts:
+#          - asset: assets/fonts/Work_Sans/WorkSans-Bold.ttf
+#
+#      - family: WorkSansMedium
+#        fonts:
+#          - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
+#
+#      - family: MaliMedium
+#        fonts:
+#          - asset: assets/fonts/Mali/Mali-Medium.ttf
+#
+#      - family: MaliSemiBold
+#        fonts:
+#          - asset: assets/fonts/Mali/Mali-Semibold.ttf
+#
+#      - family: MaliBold
+#        fonts:
+#          - asset: assets/fonts/Mali/Mali-Bold.ttf
+#
+#      - family: MaliLight
+#        fonts:
+#          - asset: assets/fonts/Mali/Mali-Light.ttf
+
+      - family: RalewayLight
         fonts:
-          - asset: assets/fonts/Work_Sans/WorkSans-Semibold.ttf
+          - asset: assets/fonts/Raleway/Raleway-Light.ttf
 
-      - family: WorkSansBold
+      - family: RalewayRegular
         fonts:
-          - asset: assets/fonts/Work_Sans/WorkSans-Bold.ttf
+          - asset: assets/fonts/Raleway/Raleway-Regular.ttf
 
-      - family: WorkSansMedium
+      - family: RalewaySemiBold
         fonts:
-          - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
+          - asset: assets/fonts/Raleway/Raleway-SemiBold.ttf
 
-      - family: MaliMedium
+      - family: RalewayMedium
         fonts:
-          - asset: assets/fonts/Mali/Mali-Medium.ttf
+          - asset: assets/fonts/Raleway/Raleway-Medium.ttf
 
-      - family: MaliSemiBold
+      - family: RalewayBold
         fonts:
-          - asset: assets/fonts/Mali/Mali-Semibold.ttf
-
-      - family: MaliBold
-        fonts:
-          - asset: assets/fonts/Mali/Mali-Bold.ttf
-
-      - family: MaliLight
-        fonts:
-          - asset: assets/fonts/Mali/Mali-Light.ttf
-
-
+          - asset: assets/fonts/Raleway/Raleway-Bold.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages

@@ -6,6 +6,7 @@ class DotsIndicator extends AnimatedWidget {
     this.controller,
     this.itemCount,
     this.onPageSelected,
+    this.kDotSize,
     this.color: Colors.white,
   }) : super(listenable: controller);
 
@@ -24,7 +25,7 @@ class DotsIndicator extends AnimatedWidget {
   final Color color;
 
   // The base size of the dots
-  static const double _kDotSize = 8.0;
+  final double kDotSize;
 
   // The increase in the size of the selected dot
   static const double _kMaxZoom = 2.0;
@@ -47,8 +48,8 @@ class DotsIndicator extends AnimatedWidget {
           color: color,
           type: MaterialType.circle,
           child: new Container(
-            width: _kDotSize * zoom,
-            height: _kDotSize * zoom,
+            width: kDotSize * zoom,
+            height: kDotSize * zoom,
             child: new InkWell(
               onTap: () => onPageSelected(index),
             ),

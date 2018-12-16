@@ -3,8 +3,8 @@ import 'package:firebase_admob/firebase_admob.dart';
 
 
 const APP_ID="ca-app-pub-4827604324491386~7417114039";
-const BANNER_APP_ID="ca-app-pub-4827604324491386/2285041006";
-const INTERSTITIAL_APP_ID="ca-app-pub-4827604324491386/5180040922";
+const BANNER_APP_ID="ca-app-pub-4827604324491386/6620542651";
+const INTERSTITIAL_APP_ID="ca-app-pub-4827604324491386/5331511710";
 
 class GoogleAds{
 
@@ -12,6 +12,7 @@ class GoogleAds{
     testDevices: APP_ID != null ? [APP_ID] : null,
     keywords: ['Cat', 'Dog', 'Animal', 'Pets'],
     gender: MobileAdGender.unknown,
+
   );
 
   static BannerAd buildBanner() {
@@ -21,8 +22,11 @@ class GoogleAds{
         targetingInfo: targetingInfo,
         size: AdSize.banner,
         listener: (MobileAdEvent event) {
+          print("eventnynya");
+          print(event);
           if (event == MobileAdEvent.loaded){
-//            print(event);
+            print("eventnynya");
+            print(event);
           }
         });
   }
