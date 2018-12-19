@@ -22,10 +22,7 @@ class GoogleAds{
         targetingInfo: targetingInfo,
         size: AdSize.banner,
         listener: (MobileAdEvent event) {
-          print("eventnynya");
-          print(event);
           if (event == MobileAdEvent.loaded){
-            print("eventnynya");
             print(event);
           }
         });

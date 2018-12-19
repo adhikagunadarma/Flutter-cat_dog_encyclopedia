@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_networkimage/flutter_advanced_networkimage.dart';
 import 'package:flutter_advanced_networkimage/transition_to_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class DetailsPage extends StatefulWidget {
   final Cat cat;
@@ -516,10 +517,11 @@ class _DetailsPageState extends State<DetailsPage> {
               ///showInSnackBar("Success load image");
             }),
 
-            loadingWidget: CircularProgressIndicator(
-              valueColor:
-                  new AlwaysStoppedAnimation<Color>(Theme.Colors.thirdColor),
-            ),
+            loadingWidget: FlareActor("assets/animations/loading.flr",
+              animation: "loadingPaw",
+              alignment:Alignment.center,
+              color : Colors.black,
+              fit:BoxFit.contain,),
             // This is default duration
             duration: Duration(milliseconds: 300),
             fit: BoxFit.fill,

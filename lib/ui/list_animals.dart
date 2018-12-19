@@ -7,6 +7,7 @@ import 'package:cat_dog_encyclopedia/model/Cat.dart';
 import 'package:cat_dog_encyclopedia/model/Dog.dart';
 import 'package:flutter_advanced_networkimage/transition_to_image.dart';
 import 'package:flutter_advanced_networkimage/flutter_advanced_networkimage.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 import 'package:connectivity/connectivity.dart';
 import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
@@ -48,6 +49,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
 
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final ScrollController _scrollController = new ScrollController();
   final TextEditingController _searchController = new TextEditingController();
   final FocusNode _searchFocusNode = FocusNode();
 
@@ -57,39 +59,24 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   List<Dog> dogs = new List();
   List animals = new List();
   List filteredAnimals = new List();
+  List searchAnimalsData = new List();
   StreamSubscription<QuerySnapshot> animalSub;
 
-  static Icon _searchIcon = new Icon(
-    FontAwesomeIcons.search,
-    color: Colors.black,
-    size: _searchIconSize,
-  );
-
-  static Widget _appBarTitle = new Text(
-    "Encyclopedia List",
-    style: TextStyle(
-        color: Colors.black,
-        letterSpacing: 1.5,
-        fontWeight: FontWeight.w500,
-        fontFamily: Theme.Font.secondaryFont,
-        fontSize: _searchFontSize),
-  );
-
-  _ListAnimalsPageState() {
-
-    _searchController.addListener(() {
-      if (_searchController.text.isEmpty) {
-        setState(() {
-          _searchText = "";
-          filteredAnimals = animals;
-        });
-      } else {
-        setState(() {
-          _searchText = _searchController.text;
-        });
-      }
-    }) ;
-  }
+//  _ListAnimalsPageState() {
+//
+//    _searchController.addListener(() {
+//      if (_searchController.text.isEmpty) {
+//        setState(() {
+//          _searchText = "";
+//          filteredAnimals = animals;
+//        });
+//      } else {
+//        setState(() {
+//          _searchText = _searchController.text;
+//        });
+//      }
+//    }) ;
+//  }
   @override
   void initState() {
 
@@ -100,20 +87,6 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   @override
   void dispose() {
-    _searchIcon = new Icon(
-      FontAwesomeIcons.search,
-      color: Colors.black,
-      size: _searchFontSize,
-    );
-    _appBarTitle = new Text(
-      "Encyclopedia List",
-      style: TextStyle(
-          color: Colors.black,
-          fontFamily: Theme.Font.secondaryFont,
-          letterSpacing: 1.5,
-          fontWeight: FontWeight.w500,
-          fontSize: _searchFontSize),
-    );
     super.dispose();
   }
 
@@ -139,12 +112,13 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
     _loadingIndicatorSize = MediaQuery.of(context).size.height / 4.5533; //loading indicator container size
 
+
     _bottomBarHeight = MediaQuery.of(context).size.height / 13.66; //bottom bar size/height
   }
 
   @override
   Widget build(BuildContext context) {
-    setSize();
+    setSize(); // set weight,height, font size, etc
     Widget loadingIndicator = _load
         ? new Container(
             color: Theme.Colors.thirdColor.withOpacity(0.0),
@@ -153,11 +127,17 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                   padding: EdgeInsets.all(_padding),
                   child: new Center(
                       child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      new CircularProgressIndicator(
-                        valueColor: new AlwaysStoppedAnimation<Color>(
-                            Theme.Colors.thirdColor),
+
+                      SizedBox(
+                        child: new FlareActor("assets/animations/loading.flr",
+                          animation: "loadingPaw",
+                          color : Colors.black,
+                          alignment:Alignment.center,
+                          fit:BoxFit.contain,),
+                        width : 3*_loadingIndicatorSize/4 ,
+                        height : 3*_loadingIndicatorSize/4
                       ),
                       new Text(
                         "Loading data...",
@@ -188,7 +168,6 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   Widget getRow(int i) {
     return GestureDetector(
-
       child: Padding(
           padding: EdgeInsets.all(
             _padding,
@@ -225,13 +204,18 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                           timeoutDuration: Duration(minutes: 1),
                           useDiskCache: true, loadFailedCallback: () {
                         showInSnackBar("Connection Timed Out");
-                        print("cto");
+//                        print("cto");
                       }),
 
-                      loadingWidget: CircularProgressIndicator(
-                        valueColor: new AlwaysStoppedAnimation<Color>(
-                            Theme.Colors.thirdColor),
-                      ),
+//                      loadingWidget: CircularProgressIndicator(
+////                        valueColor: new AlwaysStoppedAnimation<Color>(
+////                            Theme.Colors.thirdColor),
+////                      ),
+                      loadingWidget: FlareActor("assets/animations/loading.flr",
+                        animation: "loadingPaw",
+                        color : Colors.black,
+                        alignment:Alignment.center,
+                        fit:BoxFit.contain,),
                       // This is default duration
                       duration: Duration(milliseconds: 300),
                       fit: BoxFit.fill,
@@ -280,11 +264,50 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     return new AppBar(
       backgroundColor: Theme.Colors.primaryColor.withOpacity(0.8),
       elevation: 0.0,
-      title: _appBarTitle,
-      leading: new IconButton(
-        icon: _searchIcon,
-        onPressed: _searchPressed,
+      title: new TextField(
+        onChanged: (value) {
+          filterSearchResults(value);
+        },
+        autofocus: false,
+        keyboardType: TextInputType.text,
+        focusNode: _searchFocusNode,
+        controller: _searchController,
+        style: TextStyle(
+            fontFamily: Theme.Font.secondaryFont,
+            fontSize: _searchFontSize,
+            letterSpacing: 1.5,
+            fontWeight: FontWeight.w500,
+            color: Colors.black),
+        decoration: InputDecoration(
+          border: InputBorder.none,
+          icon: GestureDetector(
+            onTap: (){
+              setState(() {
+                searchAnimalsData.clear();
+                _searchController.clear();
+                filteredAnimals.clear();
+                filteredAnimals.addAll(animals);
+              });
+            },
+            child: Icon(
+              FontAwesomeIcons.times,
+              color: Colors.black,
+              size: _searchIconSize,
+            ),
+          ),
+          hintText: "Search...",
+          hintStyle: TextStyle(
+              letterSpacing: 1.5,
+              fontWeight: FontWeight.w500,
+              fontFamily: Theme.Font.secondaryFont,
+              fontSize: _miscFontSize),
+        ),
       ),
+      leading: new Icon(
+          FontAwesomeIcons.search,
+          color: Colors.black,
+          size: _searchIconSize,
+        ),
     );
   }
 
@@ -299,18 +322,17 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   }
 
   Widget _buildList(Widget loadingIndicator) {
-    if (!(_searchText.isEmpty)) {
-      List tempList = new List();
-      for (int i = 0; i < filteredAnimals.length; i++) {
-        if (filteredAnimals[i]
-            .name
-            .toLowerCase()
-            .contains(_searchText.toLowerCase())) {
-          tempList.add(filteredAnimals[i]);
-        }
-      }
-      filteredAnimals = tempList;
-    }
+
+//    if (!(_searchText.isEmpty)) {
+//      List tempList = new List();
+//      for (int i = 0; i < filteredAnimals.length; i++) {
+//        if (filteredAnimals[i].name.toLowerCase().contains(_searchText.toLowerCase())) {
+//          tempList.add(filteredAnimals[i]);
+//        }
+//      }
+//      filteredAnimals = tempList;
+//    }
+
     return Stack(
       children: <Widget>[
         Container(
@@ -321,15 +343,14 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                 colors: [
                   Theme.Colors.primaryColor,
                   Theme.Colors.secondaryColor,
-//                    Theme.Colors.thirdColor,
                 ],
                 begin: const FractionalOffset(0.0, 0.0),
                 end: const FractionalOffset(1.0, 1.0),
-//              stops: [0.333,0.667, 1.0],
                 stops: [0.4, 1.0],
                 tileMode: TileMode.clamp),
           ),
           child: ListView.builder(
+            controller: _scrollController,
             itemCount: animals == null ? 0 : filteredAnimals.length,
             padding: EdgeInsets.all(_padding),
             itemBuilder: (BuildContext context, int index) {
@@ -377,8 +398,8 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             .toList();
 
         setState(() {
-          animals = dataCats;
-          filteredAnimals = animals;
+          animals.addAll(dataCats);
+          filteredAnimals.addAll(animals);
           _load = false;
         });
       } else {
@@ -386,8 +407,8 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             .map((documentSnapshot) => Dog.fromMap(documentSnapshot.data))
             .toList();
         setState(() {
-          animals = dataDogs;
-          filteredAnimals = animals;
+          animals.addAll(dataDogs);
+          filteredAnimals.addAll(animals);
           _load = false;
         });
       }
@@ -400,59 +421,27 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     });
   }
 
-  void _searchPressed() {
-    setState(() {
-      if (_searchIcon.icon == FontAwesomeIcons.search) {
-        _searchIcon = new Icon(
-          FontAwesomeIcons.times,
-          color: Colors.black,
-          size: _searchIconSize,
-        );
-        _appBarTitle = new TextField(
-          autofocus: true,
-
-          keyboardType: TextInputType.text,
-          focusNode: _searchFocusNode,
-          controller: _searchController,
-          style: TextStyle(
-              fontFamily: Theme.Font.secondaryFont,
-              fontSize: _searchFontSize,
-              letterSpacing: 1.5,
-              fontWeight: FontWeight.w500,
-              color: Colors.black),
-          decoration: InputDecoration(
-            border: InputBorder.none,
-            icon: Icon(
-              FontAwesomeIcons.search,
-              color: Colors.black,
-              size: _searchIconSize,
-            ),
-            hintText: "Search...",
-            hintStyle: TextStyle(
-                letterSpacing: 1.5,
-                fontWeight: FontWeight.w500,
-                fontFamily: Theme.Font.secondaryFont,
-                fontSize: _miscFontSize),
-          ),
-        );
-      } else {
-        _searchIcon = new Icon(
-          FontAwesomeIcons.search,
-          color: Colors.black,
-          size: _searchFontSize,
-        );
-        _appBarTitle = new Text(
-          "Encyclopedia List",
-          style: TextStyle(
-              color: Colors.black,
-              fontFamily: Theme.Font.secondaryFont,
-              letterSpacing: 1.5,
-              fontWeight: FontWeight.w500,
-              fontSize: _searchFontSize),
-        );
-        filteredAnimals = animals;
+  void filterSearchResults(String query) {
+    if(query.isNotEmpty) {
+      animals.forEach((item) {
+        if(item.name.toLowerCase().contains(query.toLowerCase())) {
+          searchAnimalsData.add(item);
+        }
+      });
+      setState(() {
+        filteredAnimals.clear();
+        filteredAnimals.addAll(searchAnimalsData);
+        searchAnimalsData.clear();
+      });
+//      return;
+    } else {
+      setState(() {
+        searchAnimalsData.clear();
         _searchController.clear();
-      }
-    });
+        filteredAnimals.clear();
+        filteredAnimals.addAll(animals);
+      });
+    }
   }
+
 }
