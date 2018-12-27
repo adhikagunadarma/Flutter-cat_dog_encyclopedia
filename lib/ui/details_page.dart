@@ -259,17 +259,13 @@ class _DetailsPageState extends State<DetailsPage> {
 
   Widget _buildAppBar(name, _type) {
     return new AppBar(
-      elevation: 0.0,
-      leading: new IconButton(
-        icon: new Icon(
+      elevation: 5.0,
+      leading: new Icon(
           _type == "cats" ? FontAwesomeIcons.cat : FontAwesomeIcons.dog,
           color: Colors.black,
           size: _appBarIconSize,
         ),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
+
       title: new Text(
         name,
         style: TextStyle(
@@ -391,8 +387,11 @@ class _DetailsPageState extends State<DetailsPage> {
                         fontWeight: FontWeight.w500,
                         fontSize: _valueFontSize,
                         letterSpacing: 1.5,
-                        fontFamily: Theme.Font.primaryFont),
-                    textAlign: TextAlign.justify,
+                        fontFamily: Theme.Font.primaryFont,
+                        wordSpacing: 2.0,
+                    ),
+                    textAlign: TextAlign.center,
+
                   ),
                 ),
               ],
@@ -406,6 +405,12 @@ class _DetailsPageState extends State<DetailsPage> {
   ///container untuk lifespan ,about dan size
   Widget _detailsBottomContainerMain(
       String dataLifespan, String dataSize, String dataAbout) {
+
+    List<String> explode = dataSize.split(';');
+    String size = '';
+    explode.forEach((value) => size = size+"\n"+value+"\n");
+
+
     ///buat jarak antara ujung layar dengan container
     return Padding(
       padding: EdgeInsets.all(_15paddingSize),
@@ -433,8 +438,9 @@ class _DetailsPageState extends State<DetailsPage> {
             child: Column(
               children: <Widget>[
                 _detailsBottomContainerMainData("Lifespan", dataLifespan),
-                _detailsBottomContainerMainData("Size", dataSize),
+                _detailsBottomContainerMainData("Size", size),
                 _detailsBottomContainerMainData("About", dataAbout),
+
               ],
             ),
           ),
@@ -460,7 +466,7 @@ class _DetailsPageState extends State<DetailsPage> {
               letterSpacing: 1.5,
               fontWeight: FontWeight.w500,
               fontFamily: Theme.Font.primaryFont),
-          textAlign: TextAlign.justify,
+          textAlign: TextAlign.start,
         ),
         leading: Container(
           width: _bottomContainerMainDataTitleWidth,

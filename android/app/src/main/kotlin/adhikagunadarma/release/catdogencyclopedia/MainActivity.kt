@@ -1,4 +1,4 @@
-package com.example.catdogencyclopedia
+package adhikagunadarma.release.catdogencyclopedia
 
 import android.os.Bundle
 

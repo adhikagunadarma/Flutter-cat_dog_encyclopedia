@@ -54,7 +54,8 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   final FocusNode _searchFocusNode = FocusNode();
 
   static bool _load;
-  String _searchText = "";
+  static bool _search;
+  List<String> alphabets = ["A","B","C"];
   List<Cat> cats = new List();
   List<Dog> dogs = new List();
   List animals = new List();
@@ -62,24 +63,9 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   List searchAnimalsData = new List();
   StreamSubscription<QuerySnapshot> animalSub;
 
-//  _ListAnimalsPageState() {
-//
-//    _searchController.addListener(() {
-//      if (_searchController.text.isEmpty) {
-//        setState(() {
-//          _searchText = "";
-//          filteredAnimals = animals;
-//        });
-//      } else {
-//        setState(() {
-//          _searchText = _searchController.text;
-//        });
-//      }
-//    }) ;
-//  }
   @override
   void initState() {
-
+    _search = false;
     _load = true;
     getData();
     super.initState();
@@ -204,13 +190,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                           timeoutDuration: Duration(minutes: 1),
                           useDiskCache: true, loadFailedCallback: () {
                         showInSnackBar("Connection Timed Out");
-//                        print("cto");
                       }),
-
-//                      loadingWidget: CircularProgressIndicator(
-////                        valueColor: new AlwaysStoppedAnimation<Color>(
-////                            Theme.Colors.thirdColor),
-////                      ),
                       loadingWidget: FlareActor("assets/animations/loading.flr",
                         animation: "loadingPaw",
                         color : Colors.black,
@@ -246,6 +226,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             ),
           )),
       onTap: () {
+        _searchFocusNode.unfocus();
         Navigator.push(
             context,
             widget.type == 'cats'
@@ -261,14 +242,15 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   }
 
   Widget _buildAppBar() {
-    return new AppBar(
+    if (_search) {
+      return new AppBar(
       backgroundColor: Theme.Colors.primaryColor.withOpacity(0.8),
-      elevation: 0.0,
-      title: new TextField(
+      elevation: 5.0,
+      title: TextField(
         onChanged: (value) {
           filterSearchResults(value);
         },
-        autofocus: false,
+        autofocus: true,
         keyboardType: TextInputType.text,
         focusNode: _searchFocusNode,
         controller: _searchController,
@@ -279,23 +261,26 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             fontWeight: FontWeight.w500,
             color: Colors.black),
         decoration: InputDecoration(
-          border: InputBorder.none,
-          icon: GestureDetector(
-            onTap: (){
-              setState(() {
-                searchAnimalsData.clear();
-                _searchController.clear();
-                filteredAnimals.clear();
-                filteredAnimals.addAll(animals);
-              });
-            },
-            child: Icon(
+          suffixIcon: IconButton(
+            icon: Icon(
               FontAwesomeIcons.times,
               color: Colors.black,
               size: _searchIconSize,
             ),
+            onPressed: (){
+              {
+
+                setState(() {
+//                  searchAnimalsData.clear();
+                  _searchController.clear();
+                  filteredAnimals.clear();
+                  filteredAnimals.addAll(animals);
+                });
+              }
+            },
           ),
-          hintText: "Search...",
+          border: InputBorder.none,
+          hintText: "Enter name here..",
           hintStyle: TextStyle(
               letterSpacing: 1.5,
               fontWeight: FontWeight.w500,
@@ -303,12 +288,53 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
               fontSize: _miscFontSize),
         ),
       ),
-      leading: new Icon(
+      leading: IconButton(
+        icon: new Icon(
+            FontAwesomeIcons.arrowLeft,
+            color: Colors.black,
+            size: _searchIconSize,
+          ),
+        onPressed: (){
+          setState(() {
+            _search = false;
+            _searchFocusNode.unfocus();
+            searchAnimalsData.clear();
+            _searchController.clear();
+            filteredAnimals.clear();
+            filteredAnimals.addAll(animals);
+          });
+        },
+      ),
+    );
+    } else {
+      return new AppBar(
+      backgroundColor: Theme.Colors.primaryColor.withOpacity(0.8),
+      elevation: 5.0,
+      title: new Text(
+        "Encyclopedia List",
+        style: TextStyle(
+            fontFamily: Theme.Font.secondaryFont,
+            fontSize: _searchFontSize,
+            letterSpacing: 1.5,
+            fontWeight: FontWeight.w500,
+            color: Colors.black),
+
+      ),
+      leading: IconButton(
+        icon: new Icon(
           FontAwesomeIcons.search,
           color: Colors.black,
           size: _searchIconSize,
         ),
+        onPressed: (){
+          setState(() {
+            _search = true;
+
+          });
+        },
+      ),
     );
+    }
   }
 
   Widget _buildBottomBar() {
@@ -423,6 +449,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   void filterSearchResults(String query) {
     if(query.isNotEmpty) {
+      searchAnimalsData.clear();
       animals.forEach((item) {
         if(item.name.toLowerCase().contains(query.toLowerCase())) {
           searchAnimalsData.add(item);
@@ -431,12 +458,11 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
       setState(() {
         filteredAnimals.clear();
         filteredAnimals.addAll(searchAnimalsData);
-        searchAnimalsData.clear();
       });
 //      return;
     } else {
       setState(() {
-        searchAnimalsData.clear();
+//        searchAnimalsData.clear();
         _searchController.clear();
         filteredAnimals.clear();
         filteredAnimals.addAll(animals);

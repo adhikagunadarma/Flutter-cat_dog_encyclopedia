@@ -34,7 +34,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.catdogencyclopedia"
+        applicationId "adhikagunadarma.release.catdogencyclopedia"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
