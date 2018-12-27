@@ -37,6 +37,8 @@ class _DetailsPageState extends State<DetailsPage> {
   static double _appBarIconSize;
   static double _appBarFontSize;
 
+  static double _lineContainerSize;
+
   static double _bottomBarHeight;
 
   static double _middleContainerHeight;
@@ -44,7 +46,6 @@ class _DetailsPageState extends State<DetailsPage> {
   static double _bottomContainerHeight;
   static double _titleFontSize;
   static double _valueFontSize;
-  static double _imageThreshold;
   static double _miscFontSize;
 //  static double _borderRadius;
   static double _15paddingSize;
@@ -151,6 +152,7 @@ class _DetailsPageState extends State<DetailsPage> {
 
     _appBarIconSize = MediaQuery.of(context).size.height / 34.15; //app bar icon size/height
     _appBarFontSize = MediaQuery.of(context).size.height / 34.15; //app bar icon size/height
+    _lineContainerSize = MediaQuery.of(context).size.height / 34.15;
 
     _bottomBarHeight = MediaQuery.of(context).size.height / 13.66; //bottom bar size/height if any
 
@@ -333,71 +335,119 @@ class _DetailsPageState extends State<DetailsPage> {
     return Padding(
       ///buat jarak dari ujung layar dengan container
       padding: EdgeInsets.all(_15paddingSize),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius:
-              BorderRadius.all(Radius.circular(_bottomContainerBorderRadius)),
-          color: Theme.Colors.thirdColor.withOpacity(1.0),
-          boxShadow: [
-            new BoxShadow(
-              offset: Offset(1.0, 2.0),
-              color: Colors.black,
-              blurRadius: 5.0,
-            ),
-            new BoxShadow(
-              offset: Offset(0.0, 0.0),
-              color: Theme.Colors.primaryColor.withOpacity(0.8),
-              blurRadius: 5.0,
-            ),
-          ],
-        ),
-        child: Padding(
-          ///buat jarak antara ujung container dengan batas
-          padding: EdgeInsets.all(_15paddingSize),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                Padding(
-                  ///buat jarak dari batas(kiri kanan) dengan text
-                  padding: EdgeInsets.fromLTRB(
-                      _bottomContainerMainExtraPaddingLeft,
-                      _bottomContainerMainExtraPaddingTop,
-                      _bottomContainerMainExtraPaddingRight,
-                      _bottomContainerMainExtraPaddingBottom),
-                  child: Text(
-                    title,
-                    style: TextStyle(
-                      fontSize: _titleFontSize,
-                      letterSpacing: 1.5,
-                      fontWeight: FontWeight.w500,
-                      fontFamily: Theme.Font.primaryFont,
-                    ),
-                  ),
+      child: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              borderRadius:
+                  BorderRadius.all(Radius.circular(_bottomContainerBorderRadius)),
+              color: Theme.Colors.thirdColor.withOpacity(1.0),
+              boxShadow: [
+                new BoxShadow(
+                  offset: Offset(1.0, 2.0),
+                  color: Colors.black,
+                  blurRadius: 5.0,
                 ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(
-                      _bottomContainerMainExtraPaddingLeft,
-                      _bottomContainerMainExtraPaddingTop,
-                      _bottomContainerMainExtraPaddingRight,
-                      _bottomContainerMainExtraPaddingBottom),
-                  child: Text(
-                    data,
-                    style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: _valueFontSize,
-                        letterSpacing: 1.5,
-                        fontFamily: Theme.Font.primaryFont,
-                        wordSpacing: 2.0,
-                    ),
-                    textAlign: TextAlign.center,
-
-                  ),
+                new BoxShadow(
+                  offset: Offset(0.0, 0.0),
+                  color: Theme.Colors.primaryColor.withOpacity(0.8),
+                  blurRadius: 5.0,
                 ),
               ],
             ),
+            child: SizedBox(
+              height: _bottomContainerHeight,
+              width : _bodyContainerWidth,
+              child: Padding(
+                ///buat jarak antara ujung container dengan batas
+                padding: EdgeInsets.all(_15paddingSize),
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Padding(
+                        ///buat jarak dari batas(kiri kanan) dengan text
+                        padding: EdgeInsets.fromLTRB(
+                            _bottomContainerMainExtraPaddingLeft,
+                            _bottomContainerMainExtraPaddingTop,
+                            _bottomContainerMainExtraPaddingRight,
+                            _bottomContainerMainExtraPaddingBottom),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: new LinearGradient(
+                                    colors: [
+                                      Colors.black.withOpacity(0.0),
+                                      Colors.black.withOpacity(0.3),
+                                    ],
+                                    begin: const FractionalOffset(0.0, 0.0),
+                                    end: const FractionalOffset(1.0, 1.0),
+                                    stops: [0.0, 1.0],
+                                    tileMode: TileMode.clamp),
+                              ),
+                              width: _lineContainerSize,
+                              height: 1.0,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: _08paddingSize, right: _08paddingSize),
+                              child: Text(
+                                title,
+                                style: TextStyle(
+                                  fontSize: _titleFontSize,
+                                  letterSpacing: 1.5,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: Theme.Font.primaryFont,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: new LinearGradient(
+                                    colors: [
+                                      Colors.black.withOpacity(0.3),
+                                      Colors.black.withOpacity(0.0),
+                                    ],
+                                    begin: const FractionalOffset(0.0, 0.0),
+                                    end: const FractionalOffset(1.0, 1.0),
+                                    stops: [0.0, 1.0],
+                                    tileMode: TileMode.clamp),
+                              ),
+                              width: _lineContainerSize,
+                              height: 1.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(
+                            _bottomContainerMainExtraPaddingLeft,
+                            _bottomContainerMainExtraPaddingTop,
+                            _bottomContainerMainExtraPaddingRight,
+                            _bottomContainerMainExtraPaddingBottom),
+                        child: Text(
+                          data,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: _valueFontSize,
+                              letterSpacing: 1.5,
+                              fontFamily: Theme.Font.primaryFont,
+                              wordSpacing: 2.0,
+                          ),
+                          textAlign: TextAlign.center,
+
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
-        ),
+          Container(child: Icon(FontAwesomeIcons.chevronLeft,color: Colors.black.withOpacity(0.2),),margin: EdgeInsets.fromLTRB(10.0, 125.0,  0.0, 0.0),),
+          title != "Health" ? Container(child: Icon(FontAwesomeIcons.chevronRight,color: Colors.black.withOpacity(0.2)),margin: EdgeInsets.fromLTRB(280.0, 125.0, 0.0, 0.0),): Container(),
+        ],
       ),
     );
   }
@@ -414,37 +464,103 @@ class _DetailsPageState extends State<DetailsPage> {
     ///buat jarak antara ujung layar dengan container
     return Padding(
       padding: EdgeInsets.all(_15paddingSize),
-      child: Container(
-        decoration: BoxDecoration(
-            color: Theme.Colors.thirdColor.withOpacity(1.0),
-            boxShadow: [
-              new BoxShadow(
-                offset: Offset(1.0, 2.0),
-                color: Colors.black,
-                blurRadius: 5.0,
-              ),
-              new BoxShadow(
-                offset: Offset(0.0, 0.0),
-                color: Theme.Colors.primaryColor.withOpacity(0.8),
-                blurRadius: 5.0,
-              ),
-            ],
-            borderRadius: BorderRadius.all(
-                Radius.circular(_bottomContainerBorderRadius))),
-        child: Padding(
-          ///buat jarak antara ujung layar dengan container
-          padding: EdgeInsets.all(_15paddingSize),
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                _detailsBottomContainerMainData("Lifespan", dataLifespan),
-                _detailsBottomContainerMainData("Size", size),
-                _detailsBottomContainerMainData("About", dataAbout),
+      child: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+                color: Theme.Colors.thirdColor.withOpacity(1.0),
+                boxShadow: [
+                  new BoxShadow(
+                    offset: Offset(1.0, 2.0),
+                    color: Colors.black,
+                    blurRadius: 5.0,
+                  ),
+                  new BoxShadow(
+                    offset: Offset(0.0, 0.0),
+                    color: Theme.Colors.primaryColor.withOpacity(0.8),
+                    blurRadius: 5.0,
+                  ),
+                ],
+                borderRadius: BorderRadius.all(
+                    Radius.circular(_bottomContainerBorderRadius))),
+            child: SizedBox(
+              height: _bottomContainerHeight,
+              width : _bodyContainerWidth,
+              child: Padding(
+                ///buat jarak antara ujung layar dengan container
+                padding: EdgeInsets.all(_15paddingSize),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        ///buat jarak dari batas(kiri kanan) dengan text
+                        padding: EdgeInsets.fromLTRB(
+                            _bottomContainerMainExtraPaddingLeft,
+                            _bottomContainerMainExtraPaddingTop,
+                            _bottomContainerMainExtraPaddingRight,
+                            _bottomContainerMainExtraPaddingBottom),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: new LinearGradient(
+                                    colors: [
+                                      Colors.black.withOpacity(0.0),
+                                      Colors.black.withOpacity(0.3),
+                                    ],
+                                    begin: const FractionalOffset(0.0, 0.0),
+                                    end: const FractionalOffset(1.0, 1.0),
+                                    stops: [0.0, 1.0],
+                                    tileMode: TileMode.clamp),
+                              ),
+                              width: _lineContainerSize,
+                              height: 1.0,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: _08paddingSize, right: _08paddingSize),
+                              child: Text(
+                                "Basic Info",
+                                style: TextStyle(
+                                  fontSize: _titleFontSize,
+                                  letterSpacing: 1.5,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: Theme.Font.primaryFont,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: new LinearGradient(
+                                    colors: [
+                                      Colors.black.withOpacity(0.3),
+                                      Colors.black.withOpacity(0.0),
+                                    ],
+                                    begin: const FractionalOffset(0.0, 0.0),
+                                    end: const FractionalOffset(1.0, 1.0),
+                                    stops: [0.0, 1.0],
+                                    tileMode: TileMode.clamp),
+                              ),
+                              width: _lineContainerSize,
+                              height: 1.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      _detailsBottomContainerMainData("Lifespan", dataLifespan),
+                      _detailsBottomContainerMainData("Size", size),
+                      _detailsBottomContainerMainData("About", dataAbout),
 
-              ],
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
-        ),
+          Container(child: Icon(FontAwesomeIcons.chevronRight,color: Colors.black.withOpacity(0.2)),margin: EdgeInsets.fromLTRB(280.0, 125.0, 0.0, 0.0),),
+
+        ],
+
       ),
     );
   }

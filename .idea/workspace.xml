@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7719188-629d-4ff7-b280-6ade66462b51" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/kotlin/com/example/catdogencyclopedia/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/kotlin/adhikagunadarma/release/catdogencyclopedia/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Affenpinscher.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Affenpinscher.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/American_Leopard_Hound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/American_Leopard_Hound.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Anatolian_Shepherd_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Anatolian_Shepherd_Dog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Barbet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Barbet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Basset_Fauve_de_Bretagne.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Basset_Fauve_de_Bretagne.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Bavarian_Mountain_Scent_Hound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Bavarian_Mountain_Scent_Hound.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Berger_Picard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Berger_Picard.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Boykin_Spaniel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Boykin_Spaniel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Bracco_Italiano.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Bracco_Italiano.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Braque_Francais_Pyrenean.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Braque_Francais_Pyrenean.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Brittany.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Brittany.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/style/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/style/theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/details_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/details_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/list_animals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/list_animals.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/detail_normal.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/home_normal.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/list_normal.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/splash_normal.JPG" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -47,20 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home_page.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home_page.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ui/home_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4116">
-              <caret line="335" column="38" selection-start-line="335" selection-start-column="38" selection-end-line="335" selection-end-column="38" />
+            <state relative-caret-position="291">
+              <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details_page.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="details_page.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ui/details_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-479">
-              <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+            <state relative-caret-position="1003">
+              <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -69,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/lib/ui/list_animals.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
-              <caret line="245" column="24" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
+              <caret line="466" column="32" selection-start-line="466" selection-start-column="32" selection-end-line="466" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -77,8 +53,8 @@
       <file leaf-file-name="theme.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/style/theme.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="68">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -122,8 +98,8 @@
       <file leaf-file-name="Dog.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/model/Dog.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            <state relative-caret-position="359">
+              <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -148,10 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>app</find>
-      <find>Font</find>
-      <find>FontAwe</find>
-      <find>_searchIcon</find>
       <find>_appBar</find>
       <find>_buildBody</find>
       <find>Zoomable</find>
@@ -160,7 +132,6 @@
       <find>onPres</find>
       <find>onPressed</find>
       <find>onTap</find>
-      <find>appBar</find>
       <find>stops</find>
       <find>text</find>
       <find>stop</find>
@@ -168,7 +139,6 @@
       <find>FlareActor</find>
       <find>FlareAc</find>
       <find>topContainer</find>
-      <find>getRow</find>
       <find>filteredAnimals</find>
       <find>listview</find>
       <find>version</find>
@@ -178,6 +148,12 @@
       <find>buildAppBar</find>
       <find>tabs</find>
       <find>middleContainer</find>
+      <find>getRow</find>
+      <find>appBar</find>
+      <find>AppBar</find>
+      <find>GridView</find>
+      <find>lifespan</find>
+      <find>primaryColor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,12 +181,12 @@
         <option value="$PROJECT_DIR$/android/app/build.gradle" />
         <option value="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/android/app/google-services.json" />
-        <option value="$PROJECT_DIR$/lib/model/Dog.dart" />
         <option value="$PROJECT_DIR$/lib/ui/splash_screen.dart" />
         <option value="$PROJECT_DIR$/lib/ui/home_page.dart" />
-        <option value="$PROJECT_DIR$/lib/style/theme.dart" />
+        <option value="$PROJECT_DIR$/lib/model/Dog.dart" />
         <option value="$PROJECT_DIR$/lib/ui/list_animals.dart" />
         <option value="$PROJECT_DIR$/lib/ui/details_page.dart" />
+        <option value="$PROJECT_DIR$/lib/style/theme.dart" />
       </list>
     </option>
   </component>
@@ -396,35 +372,57 @@
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921174" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49546143" visible="true" weight="0.30176565" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49546143" visible="true" weight="0.33386838" />
       <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
       <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.4969743" weight="0.3296" />
       <window_info id="Captures" order="2" weight="0.24962178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="9" sideWeight="0.49552238" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5045386" side_tool="true" weight="0.30176565" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
+      <window_info anchor="right" id="Flutter Inspector" order="9" sideWeight="0.49552238" weight="0.32980332" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49546143" visible="true" weight="0.30176565" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.4969743" weight="0.3296" />
+      <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921174" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
+      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32921174" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49546143" weight="0.3258427" />
+      <window_info id="Captures" order="2" weight="0.24962178" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info active="true" anchor="right" id="Assistant" order="5" visible="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49546143" weight="0.3258427" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32921174" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
       <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -436,6 +434,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50226927" side_tool="true" weight="0.30139104" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
@@ -447,7 +446,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49546143" weight="0.3258427" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
+      <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -685,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/Dog.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/splash_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -699,31 +691,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/home_page.dart">
+    <entry file="file://$PROJECT_DIR$/lib/model/Dog.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4116">
-          <caret line="335" column="38" selection-start-line="335" selection-start-column="38" selection-end-line="335" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/style/theme.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        <state relative-caret-position="359">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/list_animals.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="245" column="24" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
+          <caret line="466" column="32" selection-start-line="466" selection-start-column="32" selection-end-line="466" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/details_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-479">
-          <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+        <state relative-caret-position="1003">
+          <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/style/theme.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ui/home_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
         </state>
       </provider>
     </entry>

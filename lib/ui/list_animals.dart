@@ -55,7 +55,6 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
 
   static bool _load;
   static bool _search;
-  List<String> alphabets = ["A","B","C"];
   List<Cat> cats = new List();
   List<Dog> dogs = new List();
   List animals = new List();
@@ -67,7 +66,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
   void initState() {
     _search = false;
     _load = true;
-    getData();
+    _getData();
     super.initState();
   }
 
@@ -152,7 +151,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     );
   }
 
-  Widget getRow(int i) {
+  Widget _getRow(int i) {
     return GestureDetector(
       child: Padding(
           padding: EdgeInsets.all(
@@ -189,7 +188,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                       AdvancedNetworkImage(filteredAnimals[i].imageRef,
                           timeoutDuration: Duration(minutes: 1),
                           useDiskCache: true, loadFailedCallback: () {
-                        showInSnackBar("Connection Timed Out");
+                        _showInSnackBar("Connection Timed Out");
                       }),
                       loadingWidget: FlareActor("assets/animations/loading.flr",
                         animation: "loadingPaw",
@@ -222,6 +221,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
                     ),
                   ),
                 ),
+
               ],
             ),
           )),
@@ -248,7 +248,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
       elevation: 5.0,
       title: TextField(
         onChanged: (value) {
-          filterSearchResults(value);
+          _filterSearchResults(value);
         },
         autofocus: true,
         keyboardType: TextInputType.text,
@@ -333,6 +333,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
           });
         },
       ),
+
     );
     }
   }
@@ -380,7 +381,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
             itemCount: animals == null ? 0 : filteredAnimals.length,
             padding: EdgeInsets.all(_padding),
             itemBuilder: (BuildContext context, int index) {
-              return getRow(index);
+              return _getRow(index);
             },
           ),
         ),
@@ -392,7 +393,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     );
   }
 
-  void showInSnackBar(String value) {
+  void _showInSnackBar(String value) {
     FocusScope.of(context).requestFocus(new FocusNode());
     _scaffoldKey.currentState?.removeCurrentSnackBar();
     _scaffoldKey.currentState.showSnackBar(new SnackBar(
@@ -411,7 +412,7 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     ));
   }
 
-  void getData() async {
+  void _getData() async {
     var connectivityResult = await (new Connectivity().checkConnectivity());
     final CollectionReference animalCollections =
         Firestore.instance.collection(widget.type);
@@ -439,15 +440,15 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
         });
       }
       if (connectivityResult == ConnectivityResult.none) {
-        showInSnackBar("No Internet Connection");
+        _showInSnackBar("No Internet Connection");
       } else if (snapshot.documents.length < 1) {
-        showInSnackBar("Connection Timed Out");
+        _showInSnackBar("Connection Timed Out");
 //    print (connectivityResult.toString());
       }
     });
   }
 
-  void filterSearchResults(String query) {
+  void _filterSearchResults(String query) {
     if(query.isNotEmpty) {
       searchAnimalsData.clear();
       animals.forEach((item) {
