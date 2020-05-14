@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cat_dog_encyclopedia.iml" filepath="$PROJECT_DIR$/cat_dog_encyclopedia.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cat_dog_encyclopedia_android.iml" filepath="$PROJECT_DIR$/cat_dog_encyclopedia_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/app/src/main/main.iml" filepath="$PROJECT_DIR$/android/app/src/main/main.iml" />
     </modules>
   </component>
 </project>

@@ -332,7 +332,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   ),
                   new FlatButton(
                     onPressed: () {
-                      interstitialAd?.show();
+//                      interstitialAd?.show();
                       Navigator.of(context).pop(true);
                     },
                     child: new Text('Yes'),
@@ -343,33 +343,66 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         false;
   }
 
+  /// berdasarkan height
+//  void setSize() {
+//    _bodyContainerWidth = MediaQuery.of(context).size.width;
+//    _bodyContainerHeight = MediaQuery.of(context).size.height >= 775.0
+//        ? MediaQuery.of(context).size.height
+//        : 775.0;
+//    _whiteContainerBorderRadius =
+//        MediaQuery.of(context).size.height / 9.11; // white container border
+//    _whiteContainerMargin =
+//        MediaQuery.of(context).size.height / 22.7; // white container margin
+//    _padding =
+//        MediaQuery.of(context).size.height / 85.375; // overall all padding
+//    _titleFontSize =
+//        MediaQuery.of(context).size.height / 22.5; // title font size
+//    _iconSize = MediaQuery.of(context).size.height / 5; // icon size
+//    _typeContainerHeight = MediaQuery.of(context).size.height /
+//        23; //container untuk text dibawah icon
+//    _typeContainerWidth = MediaQuery.of(context).size.height /
+//        7; //container untuk text dibawah icon
+//    _typeContainerBorderRadius = MediaQuery.of(context).size.height /
+//        68.3; //border radius untuk container di bawah icon
+//    _typeContainerMarginLeft = MediaQuery.of(context).size.height /
+//        34.2; //margin untuk container di bawah icon
+//    _typeContainerMarginTop = MediaQuery.of(context).size.height / 5.5;
+//    _typeContainerMarginRight = 0.0;
+//    _typeContainerMarginBottom = MediaQuery.of(context).size.height / 142.292;
+//    _typeFontSize = MediaQuery.of(context).size.height /
+//        45; //font size untuk text dalam container di bawah icon
+//  }
+
+  /// berdasarkan width
   void setSize() {
+//    print(MediaQuery.of(context).size.height);
+//    print(MediaQuery.of(context).size.width);
     _bodyContainerWidth = MediaQuery.of(context).size.width;
     _bodyContainerHeight = MediaQuery.of(context).size.height >= 775.0
         ? MediaQuery.of(context).size.height
         : 775.0;
     _whiteContainerBorderRadius =
-        MediaQuery.of(context).size.height / 9.11; // white container border
+        MediaQuery.of(context).size.width / 5.48; // white container border
     _whiteContainerMargin =
-        MediaQuery.of(context).size.height / 22.7; // white container margin
+        MediaQuery.of(context).size.width / 13.7; // white container margin
     _padding =
-        MediaQuery.of(context).size.height / 85.375; // overall all padding
+        MediaQuery.of(context).size.width / 51.375; // overall all padding
     _titleFontSize =
-        MediaQuery.of(context).size.height / 22.5; // title font size
-    _iconSize = MediaQuery.of(context).size.height / 5; // icon size
-    _typeContainerHeight = MediaQuery.of(context).size.height /
-        23; //container untuk text dibawah icon
-    _typeContainerWidth = MediaQuery.of(context).size.height /
-        8; //container untuk text dibawah icon
-    _typeContainerBorderRadius = MediaQuery.of(context).size.height /
-        68.3; //border radius untuk container di bawah icon
-    _typeContainerMarginLeft = MediaQuery.of(context).size.height /
-        28.2; //margin untuk container di bawah icon
-    _typeContainerMarginTop = MediaQuery.of(context).size.height / 5.5;
+        MediaQuery.of(context).size.width / 13.7; // title font size
+    _iconSize = MediaQuery.of(context).size.width / 3; // icon size
+    _typeContainerHeight = MediaQuery.of(context).size.width /
+        13.84; //container untuk text dibawah icon
+    _typeContainerWidth = MediaQuery.of(context).size.width /
+        4.21; //container untuk text dibawah icon
+    _typeContainerBorderRadius = MediaQuery.of(context).size.width /
+        41.1; //border radius untuk container di bawah icon
+    _typeContainerMarginLeft = MediaQuery.of(context).size.width /
+        20.55; //margin untuk container di bawah icon
+    _typeContainerMarginTop = MediaQuery.of(context).size.width / 3.31;
     _typeContainerMarginRight = 0.0;
-    _typeContainerMarginBottom = MediaQuery.of(context).size.height / 142.292;
-    _typeFontSize = MediaQuery.of(context).size.height /
-        45; //font size untuk text dalam container di bawah icon
+    _typeContainerMarginBottom = MediaQuery.of(context).size.width / 85.625;
+    _typeFontSize = MediaQuery.of(context).size.width /
+        27.075; //font size untuk text dalam container di bawah icon
   }
 
   void setAnimation() {

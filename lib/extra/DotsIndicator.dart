@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:cat_dog_encyclopedia/style/theme.dart' as Theme;
 
 class DotsIndicator extends AnimatedWidget {
   DotsIndicator({
@@ -7,7 +8,7 @@ class DotsIndicator extends AnimatedWidget {
     this.itemCount,
     this.onPageSelected,
     this.kDotSize,
-    this.color: Colors.white,
+    this.color: Theme.Colors.thirdColor
   }) : super(listenable: controller);
 
   /// The PageController that this DotsIndicator is representing.

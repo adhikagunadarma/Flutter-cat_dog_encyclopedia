@@ -6,6 +6,7 @@ class Dog {
   String _lifespan;
   String _about;
   String _imageRef;
+  String _imageRef2;
   String _imagePath;
 
   String _health;
@@ -16,7 +17,7 @@ class Dog {
   String _training;
 
 
-  Dog(this._id, this._name, this._size, this._lifespan, this._about, this._imageRef, this._imagePath, this._health, this._grooming, this._nutrition, this._exercise, this._training,);
+  Dog(this._id, this._name, this._size, this._lifespan, this._about, this._imageRef, this._imageRef2, this._imagePath, this._health, this._grooming, this._nutrition, this._exercise, this._training,);
 
   Dog.map(dynamic obj) {
     this._id = obj['id'];
@@ -25,6 +26,7 @@ class Dog {
     this._lifespan = obj['title'];
     this._about = obj['lifespan'];
     this._imageRef = obj['imageRef'];
+    this._imageRef2 = obj['imageRef2'];
     this._imagePath = obj['imagePath'];
     this._health = obj['health'];
     this._grooming = obj['grooming'];
@@ -39,6 +41,7 @@ class Dog {
   String get lifespan => _lifespan;
   String get about => _about;
   String get imageRef => _imageRef;
+  String get imageRef2 => _imageRef2;
   String get imagePath => _imagePath;
 
   String get health => _health;
@@ -58,6 +61,7 @@ class Dog {
     map['lifespan'] = _lifespan;
     map['about'] = _about;
     map['imageRef'] = _imageRef;
+    map['imageRef2'] = _imageRef2;
     map['imagePath'] = _imagePath;
     map['health'] = _health;
     map['grooming'] = _grooming;
@@ -75,6 +79,7 @@ class Dog {
     this._lifespan = map['lifespan'];
     this._about = map['about'];
     this._imageRef = map['imageRef'];
+    this._imageRef2 = map['imageRef2'];
     this._imagePath = map['imagePath'];
     this._health = map['health'];
     this._grooming = map['grooming'];

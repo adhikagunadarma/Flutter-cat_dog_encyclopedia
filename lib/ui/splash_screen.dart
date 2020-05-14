@@ -71,13 +71,14 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 
+
   void setSize() {
     _bodyContainerWidth = MediaQuery.of(context).size.width; //body container width
     _bodyContainerHeight = MediaQuery.of(context).size.height >= 775.0 //body container height
         ? MediaQuery.of(context).size.height
         : 775.0;
-    _iconHeight = MediaQuery.of(context).size.height / 6.83; //icon size
-    _iconWidth = MediaQuery.of(context).size.height / 6.83; //icon size
+    _iconHeight = MediaQuery.of(context).size.width / 4.11; //icon size
+    _iconWidth = MediaQuery.of(context).size.width / 4.11; //icon size
   }
 
   void dispose() {

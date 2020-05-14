@@ -6,6 +6,7 @@ class Cat {
   String _lifespan;
   String _about;
   String _imageRef;
+  String _imageRef2;
   String _imagePath;
 
   String _health;
@@ -16,7 +17,7 @@ class Cat {
   String _personality;
 
 
-  Cat(this._id, this._name, this._size, this._lifespan, this._about, this._imageRef, this._imagePath, this._health, this._grooming, this._care, this._environment, this._personality,);
+  Cat(this._id, this._name, this._size, this._lifespan, this._about, this._imageRef,this._imageRef2, this._imagePath, this._health, this._grooming, this._care, this._environment, this._personality,);
 
   Cat.map(dynamic obj) {
     this._id = obj['id'];
@@ -25,6 +26,7 @@ class Cat {
     this._lifespan = obj['lifespan'];
     this._about = obj['about'];
     this._imageRef = obj['imageRef'];
+    this._imageRef2 = obj['imageRef2'];
     this._imagePath = obj['imagePath'];
     this._health = obj['health'];
     this._grooming = obj['grooming'];
@@ -33,13 +35,14 @@ class Cat {
     this._personality = obj['personality'];
   }
 
-  Cat.from(String id, String name, String size, String about, String lifespan, String imageRef, String imagePath, String health, String grooming, String care, String environment, String personality) {
+  Cat.from(String id, String name, String size, String about, String lifespan, String imageRef, String imageRef2, String imagePath, String health, String grooming, String care, String environment, String personality) {
     this._id = id;
     this._name = name;
     this._size = size;
     this._lifespan = lifespan;
     this._about = about;
     this._imageRef = imageRef;
+    this._imageRef2 = imageRef2;
     this._imagePath = imagePath;
     this._health = health;
     this._grooming = grooming;
@@ -54,6 +57,7 @@ class Cat {
   String get lifespan => _lifespan;
   String get about => _about;
   String get imageRef => _imageRef;
+  String get imageRef2 => _imageRef2;
   String get imagePath => _imagePath;
 
   String get health => _health;
@@ -73,6 +77,7 @@ class Cat {
     map['lifespan'] = _lifespan;
     map['about'] = _about;
     map['imageRef'] = _imageRef;
+    map['imageRef2'] = _imageRef2;
     map['imagePath'] = _imagePath;
     map['health'] = _health;
     map['grooming'] = _grooming;
@@ -90,6 +95,7 @@ class Cat {
     this._lifespan = map['lifespan'];
     this._about = map['about'];
     this._imageRef = map['imageRef'];
+    this._imageRef2 = map['imageRef2'];
     this._imagePath = map['imagePath'];
     this._health = map['health'];
     this._grooming = map['grooming'];

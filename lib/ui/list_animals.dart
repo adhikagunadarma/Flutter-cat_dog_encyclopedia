@@ -75,31 +75,57 @@ class _ListAnimalsPageState extends State<ListAnimalsPage> {
     super.dispose();
   }
 
+  ///berdasarkan width
   void setSize() {
+
     _bodyContainerWidth = MediaQuery.of(context).size.width; // container page width
     _bodyContainerHeight = MediaQuery.of(context).size.height >= 775.0 // container page height
         ? MediaQuery.of(context).size.height
         : 775.0;
 
-    _padding = MediaQuery.of(context).size.height / 85.375;//overall padding
+    _padding = MediaQuery.of(context).size.width / 51.375;//overall padding
 
-    _cardHeight = MediaQuery.of(context).size.height / 6.83; //each card height/size
-    _cardBorderRadius = MediaQuery.of(context).size.height / 13.66; //each card radius
+    _cardHeight = MediaQuery.of(context).size.width / 4.11; //each card height/size
+    _cardBorderRadius = MediaQuery.of(context).size.width / 8.22; //each card radius
 
-    _animalIconSize = MediaQuery.of(context).size.height / 9.11;  //animal icon size
-    _animalIconBorderRadius = MediaQuery.of(context).size.height / 18.213333; //animal icon radius
-    _animalFontSize = MediaQuery.of(context).size.height / 34.15; //animal font size
+    _animalIconSize = MediaQuery.of(context).size.width / 5.48;  //animal icon size
+    _animalIconBorderRadius = MediaQuery.of(context).size.width / 10.96; //animal icon radius
+    _animalFontSize = MediaQuery.of(context).size.width / 20.55; //animal font size
 
-    _searchIconSize = MediaQuery.of(context).size.height / 34.15; //search icon size
-    _searchFontSize = MediaQuery.of(context).size.height / 34.15; //search font size
+    _searchIconSize = MediaQuery.of(context).size.width / 20.55; //search icon size
+    _searchFontSize = MediaQuery.of(context).size.width / 20.55; //search font size
 
-    _miscFontSize = MediaQuery.of(context).size.height / 45.5333; //misc font size like loading indicator, snackbar,search hint
+    _miscFontSize = MediaQuery.of(context).size.width / 27.4; //misc font size like loading indicator, snackbar,search hint
 
-    _loadingIndicatorSize = MediaQuery.of(context).size.height / 4.5533; //loading indicator container size
+    _loadingIndicatorSize = MediaQuery.of(context).size.width / 2.138; //loading indicator container size
 
-
-    _bottomBarHeight = MediaQuery.of(context).size.height / 13.66; //bottom bar size/height
+    _bottomBarHeight = MediaQuery.of(context).size.width / 8.22; //bottom bar size/height
   }
+
+  ///berdasarkan height
+//  void setSize() {
+//    _bodyContainerWidth = MediaQuery.of(context).size.width; // container page width
+//    _bodyContainerHeight = MediaQuery.of(context).size.height >= 775.0 // container page height
+//        ? MediaQuery.of(context).size.height
+//        : 775.0;
+//    _padding = MediaQuery.of(context).size.height / 85.375;//overall padding
+//
+//    _cardHeight = MediaQuery.of(context).size.height / 6.83; //each card height/size
+//    _cardBorderRadius = MediaQuery.of(context).size.height / 13.66; //each card radius
+//
+//    _animalIconSize = MediaQuery.of(context).size.height / 9.11;  //animal icon size
+//    _animalIconBorderRadius = MediaQuery.of(context).size.height / 18.213333; //animal icon radius
+//    _animalFontSize = MediaQuery.of(context).size.height / 34.15; //animal font size
+//
+//    _searchIconSize = MediaQuery.of(context).size.height / 34.15; //search icon size
+//    _searchFontSize = MediaQuery.of(context).size.height / 34.15; //search font size
+//
+//    _miscFontSize = MediaQuery.of(context).size.height / 45.5333; //misc font size like loading indicator, snackbar,search hint
+//
+//    _loadingIndicatorSize = MediaQuery.of(context).size.height / 3.5533; //loading indicator container size
+//
+//    _bottomBarHeight = MediaQuery.of(context).size.height / 13.66; //bottom bar size/height
+//  }
 
   @override
   Widget build(BuildContext context) {

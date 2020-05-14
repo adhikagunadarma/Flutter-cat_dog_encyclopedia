@@ -1,7 +1,6 @@
 name: cat_dog_encyclopedia
 description: Cat and Dog Encyclopedia Application.
 
-
 dependencies:
   flutter:
     sdk: flutter

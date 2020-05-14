@@ -1,277 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeSettings">
-    <configurations />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7719188-629d-4ff7-b280-6ade66462b51" name="Default" comment="">
+    <list default="true" id="8420e328-47cb-4db8-ae03-e3fc03677c74" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/style/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/style/theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Abyssinian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Abyssinian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/American_Bobtail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/American_Bobtail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/American_Curl.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/American_Curl.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/American_Shorthair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/American_Shorthair.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/American_Wirehair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/American_Wirehair.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Balinese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Balinese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Bengal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Bengal.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Birman.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Birman.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Bombay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Bombay.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/British_Shorthair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/British_Shorthair.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Burmese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Burmese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Burmilla.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Burmilla.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Chartreux.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Chartreux.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Chinese_Li_Hua.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Chinese_Li_Hua.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Colorpoint_Shorthair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Colorpoint_Shorthair.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Cornish_Rex.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Cornish_Rex.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Cymric.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Cymric.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Devon_Rex.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Devon_Rex.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Egyptian_Mau.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Egyptian_Mau.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/European_Burmese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/European_Burmese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Exotic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Exotic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Havana_Brown.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Havana_Brown.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Himalayan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Himalayan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Japanese_Bobtail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Japanese_Bobtail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Javanese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Javanese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Korat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Korat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/LaPerm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/LaPerm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Maine_Coon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Maine_Coon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Manx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Manx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Nebelung.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Nebelung.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Norwegian_Forest.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Norwegian_Forest.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Ocicat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Ocicat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Oriental.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Oriental.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Persian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Persian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Pixie-Bob.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Pixie-Bob.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Ragamuffin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Ragamuffin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Ragdoll_Cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Ragdoll_Cat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Russian_Blue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Russian_Blue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Scottish_Fold.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Scottish_Fold.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Selkirk_Rex.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Selkirk_Rex.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Siamese_Cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Siamese_Cat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Siberian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Siberian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Singapura.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Singapura.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Snowshoe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Snowshoe.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Somali.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Somali.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Sphynx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Sphynx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Tonkinese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Tonkinese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Turkish_Angora.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Turkish_Angora.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/cats/Turkish_Van.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/cats/Turkish_Van.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Australian_Stumpy_Tail_Cattle_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Australian_Stumpy_Tail_Cattle_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Broholmer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Broholmer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Bulldog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Bulldog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Carolina_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Carolina_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Catahoula_Leopard_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Catahoula_Leopard_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Caucasian_Shepherd_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Caucasian_Shepherd_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Central_Asian_Shepherd_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Central_Asian_Shepherd_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Cirnecco.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Cirnecco.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Croatian_Sheepdog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Croatian_Sheepdog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Danish-Swedish_Farmdog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Danish-Swedish_Farmdog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Deutscher_Wachtelhund.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Deutscher_Wachtelhund.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Drentsche_Patrijshond.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Drentsche_Patrijshond.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Drever.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Drever.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Dutch_Shepherd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Dutch_Shepherd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Estrela_Mountain_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Estrela_Mountain_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Eurasier.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Eurasier.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/French_Bulldog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/French_Bulldog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/French_Spaniel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/French_Spaniel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/German_Longhaired_Pointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/German_Longhaired_Pointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Grand_Basset_Griffon_Vendeen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Grand_Basset_Griffon_Vendeen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Great_Pyrenees.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Great_Pyrenees.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Hamiltonstovare.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Hamiltonstovare.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Hanoverian_Scenthound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Hanoverian_Scenthound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Hokkaido.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Hokkaido.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Hovawart.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Hovawart.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Icelandic_Sheepdog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Icelandic_Sheepdog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Irish_Wolfhound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Irish_Wolfhound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Jagdterrier.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Jagdterrier.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Japanese_Chin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Japanese_Chin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Kai_Ken.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Kai_Ken.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Karelian_Bear_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Karelian_Bear_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Kishu_Ken.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Kishu_Ken.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Komondor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Komondor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Lancashire_Heeler.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Lancashire_Heeler.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Lapponian_Herder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Lapponian_Herder.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Leonberger.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Leonberger.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Maltese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Maltese.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Manchester_Terrier_Standard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Manchester_Terrier_Standard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Mountain_Cur.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Mountain_Cur.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Neopolitan_Mastiff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Neopolitan_Mastiff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Newfoundland.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Newfoundland.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Norwich_Terrier.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Norwich_Terrier.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Nova_Scotia_Duck_Tolling_Retriever.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Nova_Scotia_Duck_Tolling_Retriever.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Perro_de_Presa_Canario.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Perro_de_Presa_Canario.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Plott.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Plott.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Pointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Pointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Polish_Lowland_Sheepdog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Polish_Lowland_Sheepdog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Porcelaine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Porcelaine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Portuguese_Podengo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Portuguese_Podengo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Portuguese_Pointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Portuguese_Pointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Pudelpointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Pudelpointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Pyrenean_Mastiff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Pyrenean_Mastiff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Rafeiro_do_Alentejo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Rafeiro_do_Alentejo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Romanian_Mioritic_Shepherd_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Romanian_Mioritic_Shepherd_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Russian_Tysvetnaya_Bolonka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Russian_Tysvetnaya_Bolonka.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Samoyed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Samoyed.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Schapendoes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Schapendoes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Scottish_Deerhound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Scottish_Deerhound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Segugio_Italiano.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Segugio_Italiano.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Shikoku.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Shikoku.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Siberian_Husky.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Siberian_Husky.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Sloughi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Sloughi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Slovakian_Wirehaired_Pointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Slovakian_Wirehaired_Pointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Slovensky_Cuvac.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Slovensky_Cuvac.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Slovensky_Kopov.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Slovensky_Kopov.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Small_Munsterlander_Pointer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Small_Munsterlander_Pointer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Spanish_Mastiff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Spanish_Mastiff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Swedish_Lapphund.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Swedish_Lapphund.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Taiwan_Dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Taiwan_Dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Teddy_Roosevelt_Terrier.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Teddy_Roosevelt_Terrier.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Thai_Ridgeback.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Thai_Ridgeback.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Tornjak.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Tornjak.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Tosa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Tosa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Transylvanian_Hound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Transylvanian_Hound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Treeing_Tennessee_Brindle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Treeing_Tennessee_Brindle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Treeing_Walker_Coonhound.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Treeing_Walker_Coonhound.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/West_Highland_White_Terrier.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/West_Highland_White_Terrier.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/Yakutian_Laika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets not used/dogs/Yakutian_Laika.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/kNP9I-Anca9ukbzZW5l9SBRWzFyzI-3gSyvtBnjGOKE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/t8ucag3egc621.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets not used/dogs/w5tlm81vpo621.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_dog_encyclopedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cat_dog_encyclopedia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_dog_encyclopedia_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cat_dog_encyclopedia_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/extra/DotsIndicator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extra/DotsIndicator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/Cat.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Cat.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/Dog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Dog.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/details_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/details_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/list_animals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/list_animals.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/8.png" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.dart_tool/" />
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/.pub/" />
-    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home_page.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/ui/home_page.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="details_page.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/ui/details_page.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_animals.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/ui/list_animals.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="466" column="32" selection-start-line="466" selection-start-column="32" selection-end-line="466" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/style/theme.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splash_screen.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/ui/splash_screen.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dog.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/model/Dog.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cat.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/model/Cat.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>_appBar</find>
-      <find>_buildBody</find>
-      <find>Zoomable</find>
-      <find>getData</find>
-      <find>ListView</find>
-      <find>onPres</find>
-      <find>onPressed</find>
-      <find>onTap</find>
-      <find>stops</find>
-      <find>text</find>
-      <find>stop</find>
-      <find>onWill</find>
-      <find>FlareActor</find>
-      <find>FlareAc</find>
-      <find>topContainer</find>
-      <find>filteredAnimals</find>
-      <find>listview</find>
-      <find>version</find>
-      <find>justify</find>
-      <find>search</find>
-      <find>filteredSearch</find>
-      <find>buildAppBar</find>
-      <find>tabs</find>
-      <find>middleContainer</find>
-      <find>getRow</find>
-      <find>appBar</find>
-      <find>AppBar</find>
-      <find>GridView</find>
-      <find>lifespan</find>
-      <find>primaryColor</find>
-    </findStrings>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="7TLFTCT8HEHMU4BM" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/lib/ui/splash_screen_page.dart" />
-        <option value="$PROJECT_DIR$/lib/widget/MainPageWidgets.dart" />
-        <option value="$PROJECT_DIR$/lib/model/Cat.dart" />
-        <option value="$PROJECT_DIR$/android/app/proguard-rules.pro" />
-        <option value="$PROJECT_DIR$/android/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/main.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/dog_details_page.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/cat_details_page.dart" />
-        <option value="$PROJECT_DIR$/lib/widget/DetailsPageWidgets.dart" />
-        <option value="$PROJECT_DIR$/lib/extra/DotsIndicator.dart" />
-        <option value="$PROJECT_DIR$/lib/extra/GoogleAds.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/android/key.properties" />
-        <option value="$PROJECT_DIR$/android/app/src/main/kotlin/com/example/catdogencyclopedia/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/android/app/src/main/kotlin/adhikagunadarma/release/catdogencyclopedia/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/android/app/build.gradle" />
-        <option value="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/android/app/google-services.json" />
-        <option value="$PROJECT_DIR$/lib/ui/splash_screen.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/home_page.dart" />
-        <option value="$PROJECT_DIR$/lib/model/Dog.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/list_animals.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/details_page.dart" />
-        <option value="$PROJECT_DIR$/lib/style/theme.dart" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="99" />
-    <option name="y" value="82" />
-    <option name="width" value="697" />
-    <option name="height" value="391" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat_dog_encyclopedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat_dog_encyclopedia" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-excluded-files" value="false" />
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1btQFtJjHRueZtAY5zBstrvrtOf" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="android.sdk.path" value="D:/SDK/android_sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Changefly/tiger-auth-crypt" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -286,445 +194,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.main.dart">
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
-    <list>
-      <item itemvalue="Flutter.main.dart" />
-      <item itemvalue="Dart Command Line App.main.dart" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Dart Command Line App.main.dart" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a7719188-629d-4ff7-b280-6ade66462b51" name="Default" comment="" />
-      <created>1536921234859</created>
+      <changelist id="8420e328-47cb-4db8-ae03-e3fc03677c74" name="Default Changelist" comment="" />
+      <created>1589448809651</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1536921234859</updated>
+      <updated>1589448809651</updated>
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5045386" side_tool="true" weight="0.30176565" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921174" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49546143" visible="true" weight="0.33386838" />
-      <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.4969743" weight="0.3296" />
-      <window_info id="Captures" order="2" weight="0.24962178" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Flutter Inspector" order="9" sideWeight="0.49552238" weight="0.32980332" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5045386" side_tool="true" weight="0.30176565" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
-      <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
-      <window_info anchor="right" id="Flutter Inspector" order="9" sideWeight="0.49552238" weight="0.32980332" />
-      <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49546143" visible="true" weight="0.30176565" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.4969743" weight="0.3296" />
-      <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921174" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32921174" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49546143" weight="0.3258427" />
-      <window_info id="Captures" order="2" weight="0.24962178" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info active="true" anchor="right" id="Assistant" order="5" visible="true" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32744783" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32507738" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Flutter Inspector" order="9" sideWeight="0.49552238" weight="0.32980332" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Captures" order="6" weight="0.24962178" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50226927" side_tool="true" weight="0.30139104" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="7" sideWeight="0.5077605" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Flutter Outline" order="8" sideWeight="0.49223948" weight="0.32980332" />
-      <window_info active="true" anchor="right" id="Assistant" order="5" visible="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Logcat" order="10" sideWeight="0.4969743" weight="0.3296" />
-      <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32921174" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4977307" visible="true" weight="0.30176565" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49546143" weight="0.3258427" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.32921174" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
-    </layout-to-restore>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/Cat.dart" />
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/list_animals.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/packages/flutter/lib/src/services/asset_bundle.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/packages/flutter/lib/src/rendering/shifted_box.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/packages/flutter/lib/src/widgets/framework.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/packages/flutter/lib/src/rendering/sliver_multi_box_adaptor.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/bin/cache/dart-sdk/lib/async/zone.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter_sdk/packages/flutter/lib/src/widgets/transitions.dart" />
-    <entry file="file://$PROJECT_DIR$/test/widget_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/splash_screen_page.dart" />
-    <entry file="file://$PROJECT_DIR$/flutter_01.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/widget/MainPageWidgets.dart" />
-    <entry file="file://C:/flutter/packages/flutter/lib/src/widgets/framework.dart" />
-    <entry file="file://$PROJECT_DIR$/android/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/flutter/packages/flutter/lib/src/rendering/proxy_box.dart" />
-    <entry file="file://C:/flutter/packages/flutter/lib/src/rendering/stack.dart" />
-    <entry file="file://C:/flutter/packages/flutter/lib/src/widgets/single_child_scroll_view.dart" />
-    <entry file="file://$PROJECT_DIR$/lib/ui/dog_details_page.dart" />
-    <entry file="file://$PROJECT_DIR$/lib/widget/DetailsPageWidgets.dart" />
-    <entry file="file://$PROJECT_DIR$/lib/extra/DotsIndicator.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/extra/GoogleAds.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/key.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/src/main/kotlin/adhikagunadarma/release/catdogencyclopedia/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/google-services.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/Cat.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/splash_screen.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/Dog.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/list_animals.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="466" column="32" selection-start-line="466" selection-start-column="32" selection-end-line="466" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/details_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="359" column="42" selection-start-line="359" selection-start-column="42" selection-end-line="359" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/style/theme.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/home_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
